@@ -1,0 +1,161 @@
+---
+title: "Descriptive summary"
+author: "Kristin Dobbin"
+date: "2/28/2022"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+#markdown settings
+knitr::opts_knit$set(root.dir = "/Users/KristinDobbin/Dropbox/UCLA/R_Projects_UCLA/Consolidations", warning=FALSE, message=FALSE, include=FALSE)
+
+```
+
+```{r load, include=FALSE, echo= FALSE}
+#load libraries
+library(tidyverse)
+
+#load data
+Data <- read.csv("Outputs/CompiledFeb28.csv")
+
+#Correct data types
+Data$County <- as.factor(Data$County)
+Data$System_Type <- as.factor(Data$System_Type) #two NAs are both domestic well communities
+Data$Institution_type <- as.factor(Data$Institution_type)
+Data$Receiving_System_Institution_Type <- as.factor(Data$Receiving_System_Institution_Type)
+Data$SystemID <- as.factor(Data$SystemID)
+Data$Receiving_System_ID <- as.factor(Data$Receiving_System_ID)
+Data$Issue_summary <- as.factor(Data$Issue_summary)
+Data$Issue_capacity <- as.factor(Data$Issue_capacity)
+Data$Issue_quality <- as.factor(Data$Issue_quality)
+Data$Issue_TMF <- as.factor(Data$Issue_TMF)
+Data$Issue_disaster <- as.factor(Data$Issue_disaster)
+Data$Issue_sustainability <- as.factor(Data$Issue_sustainability)
+Data$Funding_Source <- as.factor(Data$Funding_Source)
+Data$Consolidation_Type <- as.factor(Data$Consolidation_Type)
+Data$Physical_or_Mangerial <-as.factor(Data$Physical_or_Mangerial)
+Data$Mandatory_or_voluntary <- as.factor(Data$Mandatory_or_voluntary)
+Data$Consolidatedsystem_primary_source_combinedFINAL <- as.factor(Data$Consolidatedsystem_primary_source_combinedFINAL)
+Data$Receiving_2021_source <- as.factor(Data$Receiving_2021_source)
+
+#Make subsets for different groups of interest of consolidated systems/types
+CWS <- Data %>% filter(System_Type == "C")
+Managerial <- Data %>% filter(Physical_or_Mangerial == "Managerial")
+Physical <- Data %>% filter(Physical_or_Mangerial == "Physical")
+Mandatory <- Data %>% filter(Mandatory_or_voluntary == "Mandatory")
+```
+
+## Overview of consolidations 2015-2021
+
+In 2015 there were 7,642 Public Water Systems (PWSs) in the state, 3,015 of which were Community Water Systems (CWS) (2015 Safe Drinking Water Plan). Today, the state counts 7,351 PWS with 2,870 CWS. Some of this reduction can be attributed to system consolidations. Compiling various state data sources we have identified 229 cases of consolidation including 126 consolidated CWS resulting in the inactivation of approximately 188 systems over the course of the last six years.  
+
+These consolidations have taken place is nearly every county (47 total) and impacted an estimated `r sum(na.omit(Data$Receiving_2021_pop))` Californians served by involved systems, both those that have been consolidated and those that received them. `r sum(na.omit(Data$Population))` Californians have changed water providers as part of a consolidation project, in other words, were served by a *consolidated* system. 
+
+Of the 229 cases we identify, `r Data %>% filter(Physical_or_Mangerial == "Managerial") %>% tally()` were managerial consolidations, the remaining `r Data %>% filter(Physical_or_Mangerial == "Physical") %>% tally()` were physical consolidations. Our data set consists of only `r Data %>% filter(Mandatory_or_voluntary == "Mandatory") %>% tally()` mandatory consolidations (Pratt MWC and Ceres West MHP) with the remainder being voluntary consolidations.  
+
+## Drivers of consolidation
+
+The SWRCB has publicly available information on factors driving or incentivizing consolidation in `r Data %>% tally(!is.na(Issue_summary))` of these cases. Grouping this descriptive information into categories, we find that water quality concerns are by far the most common reason for consolidation (`r Data %>% tally(Issue_summary=="Quality")` cases). Table 1 below provides frequencies for all five categories, none indicates that no driving factors or issues were listed. "Sustainability" in turn indicates that the reasons given were pro-active, e.g., reliance on a single source. Capacity indicates source capacity whereas TMF capacity indicates technical, managerial and financial capacity.
+
+```{r drivers, include=TRUE, echo=FALSE}
+knitr::kable(summary(na.omit(Data$Issue_summary)), col.names = "#")
+```
+
+## Characteristics of all consolidated systems
+
+As preciously mentioned, `r sum(na.omit(Data$Population))` Californians were served by a water system that has consolidated since the start of 2015. The mean population served by one of these systems is `r round(mean(Data$Population), digits=0)` with a minimum of `r min(Data$Population)` (as listed in SDWIS data) and maximum of `r max(Data$Population)`. The median population served,  however, is `r median(Data$Population)` indicating that the vast majority of consolidated systems are very small. `r Data %>% filter(System_Type == "C") %>% tally()` of these systems are Community Water Systems (CWS), `r Data %>% filter(System_Type == "SSWS") %>% tally()` were state small water systems and `r sum(is.na(Data$System_Type))` were domestic well communities. The remainder are a mix of NC and NTNC systems. `r Data %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "GW" | Consolidatedsystem_primary_source_combinedFINAL == "GWP") %>% tally()` of these systems relied on groundwater as their primary source, another `r Data %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "SW" | Consolidatedsystem_primary_source_combinedFINAL == "SWP") %>% tally()` relied on surface water (6 systems lack data on source water). 
+
+## Characteristics of consolidated Community Water Systems
+
+Among just the consolidated systems that were CWSs, these statistics are as follows. 
+
+```{r CWS consolidated systems, include=TRUE, echo=FALSE}
+knitr::kable(summarize(CWS,
+           Count = n(),
+           Population_mean = mean(Population),
+           Population_median = median(Population),
+           Population_min = min(Population),
+           Population_max = max(Population)))
+```
+
+`r CWS %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "GW" | Consolidatedsystem_primary_source_combinedFINAL == "GWP") %>% tally()` of these systems relied on groundwater as their primary source, another `r CWS %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "SW" | Consolidatedsystem_primary_source_combinedFINAL == "SWP") %>% tally()` relied on surface water.   
+
+These systems, in turn, represent `r sum(table(unique(CWS$Institution_type)))` different institutional/governing types (See Dobbin & Fencl 2021). The most common type is Mobile Home Parks followed by IOUs and "Private (other)" systems, representing non IOU private systems that could not readily be identified as a mutual water company, homeowners association or mobile home park.
+
+```{r gov types, include=TRUE, echo=FALSE}
+ConsolidatedtypeCWS <- as.data.frame(table(CWS$Institution_type))
+ConsolidatedtypeCWS <- rename(ConsolidatedtypeCWS, "Institutional_Type" = "Var1")
+ConsolidatedtypeCWS <- ConsolidatedtypeCWS[order(ConsolidatedtypeCWS$Freq, decreasing = TRUE),] 
+ConsolidatedtypeCWS$Freq[ConsolidatedtypeCWS$Freq==0] <- NA
+ConsolidatedtypeCWS<-ConsolidatedtypeCWS[complete.cases(ConsolidatedtypeCWS),]
+
+knitr::kable(ConsolidatedtypeCWS, row.names=FALSE)
+```
+
+## Characteristics of systems "receiving" CWSs in consolidations
+
+Among the systems that were receiving systems in the above cases of CWS consolidation, we find similar diversity in institutional types, IOUs are the most common receiving system type and City's the second most common. Overall, `r sum(table(unique(CWS$Receiving_System_Institution_Type)))` different institutional types acted as receiving systems over the studied period. 
+
+```{r recieving systems, include=TRUE, echo=FALSE}
+Receivingtype <- as.data.frame(table(CWS$Receiving_System_Institution_Type))
+Receivingtype <- rename(Receivingtype, "Institutional_Type" = "Var1")
+Receivingtype <- Receivingtype[order(Receivingtype$Freq, decreasing = TRUE),] 
+Receivingtype$Freq[Receivingtype$Freq==0] <- NA
+Receivingtype<-Receivingtype[complete.cases(Receivingtype),]
+
+knitr::kable(Receivingtype, row.names=FALSE)
+```
+
+## Governance change as a result of consolidations
+
+```{r gov combos, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+Pathways <- CWS
+Pathways$Pathway <- paste(Pathways$Institution_type, ", ", Pathways$Receiving_System_Institution_Type)
+Pathways$Pathway <- as.factor(Pathways$Pathway)
+Pathwaystable <- as.data.frame(table(Pathways$Pathway))
+Pathwaystable <- Pathwaystable[order(Pathwaystable$Freq, decreasing = TRUE),]
+```
+
+Using this information about consolidated and receiving system types, then, we are able to identify how CWS governance is changing in the state as a result of consolidations. In total, CWS consolidations represent `r sum(table(unique(Pathwaystable$Var1)))` distinct governance changes, the four most common of which are displayed in the table below. 
+
+```{r, most common combos, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+Pathwaystable_head <- top_n(Pathwaystable, 4)
+knitr::kable(Pathwaystable_head, row.names=FALSE, col.names = c("Change from, to", "#"))
+```
+
+## Appendix
+
+### Institutional types for all consolidated water systems (not just CWS):
+
+```{r appendix1, include=TRUE, echo=FALSE}
+Consolidatedtype <- as.data.frame(table(Data$Institution_type))
+Consolidatedtype <- rename(Consolidatedtype, "Consolidated_Inst_Type" = "Var1")
+Consolidatedtype <- Consolidatedtype[order(Consolidatedtype$Freq, decreasing = TRUE),] 
+
+knitr::kable(Consolidatedtype, row.names=FALSE)
+```
+
+### Institutional types for all receiving water systems (not just those receiving CWS systems):
+
+```{r appendix2, include=TRUE, echo=FALSE}
+Receivingtype_all <- as.data.frame(table(Data$Receiving_System_Institution_Type))
+Receivingtype_all <- rename(Receivingtype_all, "Institutional_Type" = "Var1")
+Receivingtype_all <- Receivingtype_all[order(Receivingtype_all$Freq, decreasing = TRUE),] 
+
+knitr::kable(Receivingtype_all, row.names=FALSE)
+```
+
+### Top ten governance change pathways for all consolidations cases (not just CWS)
+
+```{r appendix3, include=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+Pathways_all <- Data
+Pathways_all$Pathway <- paste(Pathways_all$Institution_type, ", ", Pathways_all$Receiving_System_Institution_Type)
+Pathways_all$Pathway <- as.factor(Pathways_all$Pathway)
+Pathwaystable_all <- as.data.frame(table(Pathways_all$Pathway))
+Pathwaystable_all <- Pathwaystable_all[order(Pathwaystable_all$Freq, decreasing = TRUE),]
+Pathwaystable_all_head <- top_n(Pathwaystable_all, 10)
+knitr::kable(Pathwaystable_all_head, row.names=FALSE, col.names = c("Change from, to", "#"))
+```
+

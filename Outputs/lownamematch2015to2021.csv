@@ -1,0 +1,403 @@
+"","PWS.ID","PWS.Name.x","Counties.Served.x","PWS.Type.2015","PWS.Name.y","PWS.Type","Counties.Served.y","match"
+"1","CA1700592","BAYVIEW RECREATIONAL PARK","Lake","Community water system","KONOCTI SHORES","Community water system","Lake",0.12
+"2","CA3301140","Chuckwalla Valley Associates","Riverside","Transient non-community system","CHUCKWALLA VALLEY RACEWAY WATER SYSTEM","Transient non-community system","Riverside",0.131578947368421
+"3","CA1700596","LAKEVIEW HAVEN RESORT","Lake","Community water system","BLUE LAKES VILLAGE","Community water system","Lake",0.19047619047619
+"4","CA1200648","FERNBRIDGE MARKET","Humboldt","Transient non-community system","RIDGETOP CAFE","Transient non-community system","Humboldt",0.294117647058823
+"5","CA1503682","SUNSELECT PRODUCE, INC.","Kern","Non-Transient non-community system","REVOL GREENS","Non-Transient non-community system","Kern",0.217391304347826
+"6","CA3301137","Valley Auto Water","Riverside","Transient non-community system","VALLEY AUTO WATER","Transient non-community system","Riverside",0.294117647058823
+"7","CA4810701","TRAVIS AIR FORCE BASE - DISTRIBUTION","Solano","Community water system","CALIFORNIA WATER SERVICE CO.-TRAVIS AFB","Community water system","Solano",0.205128205128205
+"8","CA3601165","MY PLACE","San Bernardino","Transient non-community system","OAK GLEN STEAK HOUSE","Transient non-community system","San Bernardino",0.2
+"9","CA4400903","NARCONON VISTA BAY","Santa Cruz","Community water system","ELEVATE ADDICTION SERVICES","Transient non-community system","Santa Cruz",0.153846153846154
+"10","CA1000587","SHAVER LAKE POINT LLC","Fresno","Transient non-community system","THE POINT AT SHAVER LAKE","Transient non-community system","Fresno",0.166666666666667
+"11","CA3200193","PNF Nervino Fire Station","Plumas","Transient non-community system","PNF BECKWOURTH NERVINO FIRE STATION","Transient non-community system","Plumas",0.257142857142857
+"12","CA1000405","DOYALS MOBILE HOME PARK","Fresno","Community water system","PIEDRA PARK ASSOCIATION","Community water system","Fresno",0.0869565217391305
+"13","CA2410305","CDPR-LOS BANOS CREEK","Merced","Transient non-community system","CDPR-SECTOR WIDE POTABLE WATER TANKS","Transient non-community system","Merced",0.305555555555556
+"14","CA3301143","Centro Medico Oasis","Riverside","Transient non-community system","CENTRO MEDICO OASIS","Non-Transient non-community system","Riverside",0.263157894736842
+"15","CA1000483","SALWASSER DEHYDRATOR","Fresno","Transient non-community system","RIVER RANCH RAISINS","Transient non-community system","Fresno",0.1
+"16","CA4110016","HILLSBOROUGH WATER DEPT.","San Mateo","Community water system","TOWN OF HILLSBOROUGH","Community water system","San Mateo",0.166666666666667
+"17","CA1500571","LUCKY 18 ON ROSAMOND, LLC","Kern","Community water system","KERN MOBILE ESTATES LLC","Community water system","Kern",0.24
+"18","CA1910108","BELL GARDENS-CITY, WATER DEPT.","Los Angeles","Community water system","CITY OF BELL GARDENS","Community water system","Los Angeles",0.233333333333333
+"19","CA5400880","THE LAKES","Tulare","Community water system","THE LAKES ASSOCIATION","Community water system","Tulare",0.428571428571429
+"20","CA3601171","DEMPSEYS PUB","San Bernardino","Transient non-community system","ABRAHAM MAIDA WATER SYSTEM","Transient non-community system","San Bernardino",0.115384615384615
+"21","CA3901304","BROOKSIDE MEADOWS ESTATE","San Joaquin","Community water system","ENCLAVE AT THE DELTA","Community water system","San Joaquin",0.208333333333333
+"22","CA5402041","PENNY WISE MOTEL","Tulare","Transient non-community system","BIG B TRAVEL CENTER 2","Transient non-community system","Tulare",0.238095238095238
+"23","CA4500102","BEAR MOUNTAIN RV RESORT","Shasta","Transient non-community system","NORTH REDDING RV VILLAGE","Community water system","Shasta",0.25
+"24","CA4200731","ALEGRIA MWC","Santa Barbara","Community water system","ALEGRIA DOMESTIC MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.297297297297297
+"25","CA5700728","GUINDA COMMONS","Yolo","Transient non-community system","COMMONS FARM KITCHEN","Transient non-community system","Yolo",0.15
+"26","CA1700650","JELLYSTONE PARK RV AND CAMP RESORT","Lake","Transient non-community system","MANDALA WATER SYSTEM","Transient non-community system","Lake",0.176470588235294
+"27","CA2000275","CHILDREN'S HOSPITAL CENTRAL CALIF","Madera","Non-Transient non-community system","VALLEY CHILDREN'S HOSPITAL","Non-Transient non-community system","Madera",0.363636363636364
+"28","CA0707623","MCCOSKER RANCH","Contra Costa","Community water system","WILCOX STATION RANCH","Community water system","Contra Costa",0.45
+"29","CA2701466","RYAN RANCH WS","Monterey","Non-Transient non-community system","CAL AM WATER COMPANY - RYAN RANCH","Non-Transient non-community system","Monterey",0.212121212121212
+"30","CA2702320","GENERAL FARMS (WATER SYSTEMS)","Monterey","Non-Transient non-community system","HITCHCOCK RD WS #01","Community water system","Monterey",0.137931034482759
+"31","CA5800205","WALNUT TREE","Yuba","Transient non-community system","MELA'S MEXICAN RESTAURANT","Transient non-community system","Yuba",0.16
+"32","CA0706031","GENOS DELI STATION","Contra Costa","Transient non-community system","COUNTRY JUNCTION DELI","Transient non-community system","Contra Costa",0.142857142857143
+"33","CA1600002","EL DORADO MOBILE PARK","Kings","Community water system","SUNSET VISTA ESTATES MHP","Community water system","Kings",0.125
+"34","CA0300011","MELODY OAKS TRAILER PARK","Amador","Community water system","SUTTER PINES MHP","Community water system","Amador",0.166666666666667
+"35","CA2400231","John B. Sanfilippo & Son, Inc.","Merced","Non-Transient non-community system","JOHN B. SANFILIPPO & SON, INC.","Non-Transient non-community system","Merced",0.466666666666667
+"36","CA2400248","Yosemite Valley Beef Packing Co Inc","Merced","Non-Transient non-community system","YOSEMITE VALLEY BEEF PACKING CO INC","Non-Transient non-community system","Merced",0.314285714285714
+"37","CA5400696","ARMY CORPS ENGS-NORTH  CAMP 4-2","Tulare","Transient non-community system","USACE - TULE RECREATION AREA","Transient non-community system","Tulare",0.0967741935483871
+"38","CA0409184","CHICO GRANGE #486","Butte","Transient non-community system","CHICO COMMUNITY GUILD","Transient non-community system","Butte",0.380952380952381
+"39","CA1200715","CALIFORNIA REDWOOD CO. - KORBEL","Humboldt","Community water system","GREEN DIAMOND RESOURCE COMPANY - KORBEL","Community water system","Humboldt",0.41025641025641
+"40","CA5403048","JD HEISKELL HOLDINGS LLC","Tulare","Non-Transient non-community system","J.D. HEISKELL & CO.","Non-Transient non-community system","Tulare",0.458333333333333
+"41","CA1000621","SHAVER LAKE PUB & GRUB","Fresno","Transient non-community system","POWELL'S PROPERTIES","Transient non-community system","Fresno",0.181818181818182
+"42","CA4300520","IDYLWILD WATER SYSTEM","Santa Clara","Community water system","RAINERI MUTUAL WATER COMPANY","Community water system","Santa Clara",0.285714285714286
+"43","CA5401082","VENTURA COASTAL CORP","Tulare","Non-Transient non-community system","VENTURA COASTAL, LLC - VISALIA DIVISION","Non-Transient non-community system","Tulare",0.435897435897436
+"44","CA5403145","WAWONA PACKING COMPANY LLC","Tulare","Non-Transient non-community system","PRIMA WAWONA - CUTLER PLANT","Non-Transient non-community system","Tulare",0.185185185185185
+"45","CA4901370","SUTTER MEDICAL CENTER OF SANTA ROSA","Sonoma","Non-Transient non-community system","SUTTER SANTA ROSA REGIONAL HOSPITAL","Non-Transient non-community system","Sonoma",0.314285714285714
+"46","CA1805001","LASSEN COUNTY SERVICE AREA NO. 2","Lassen","Non-Transient non-community system","JOHNSTONVILLE WATER SYSTEM","Non-Transient non-community system","Lassen",0.21875
+"47","CA5102025","BLUE ANGEL APARTMENTS W.S.","Sutter","Community water system","YUBA APARTMENT HOMES","Community water system","Sutter",0.461538461538462
+"48","CA2900601","MCCOURTNEY ROAD CENTER > JOHN MUIR CHART","Nevada","Non-Transient non-community system","NJUHSD MCCOURTNEY RD.","Transient non-community system","Nevada",0.15
+"49","CA2600607","MEADOWCLIFF RESORT","Mono","Transient non-community system","MEADOWCLIFF LODGE & COLEVILLE/WALKER KOA","Transient non-community system","Mono",0.375
+"50","CA0900118","PEART'S LITTLE PLACE - RESTAURANT","El Dorado","Transient non-community system","GRIZZLY FLAT WATER SYSTEM","Transient non-community system","El Dorado",0.242424242424242
+"51","CA1503651","SOUZA FAMILY VINEYARD","Kern","Transient non-community system","TEHACHAPI WINE AND CATTLE CO.","Transient non-community system","Kern",0.206896551724138
+"52","CA4500329","BLACK BUTTE PLAZA WATER SYSTEM","Shasta","Transient non-community system","STORAGESMITH, LLC DBA LASSEN LANDING","Transient non-community system","Shasta",0.25
+"53","CA4710008","CITY OF MT. SHASTA","Siskiyou","Community water system","MT. SHASTA, CITY OF","Community water system","Siskiyou",0.157894736842105
+"54","CA1500489","BRITE LAKE COMMUNITY ASSOCIATION","Kern","Community water system","BRITE LAKE MUTUAL WATER COMPANY","Community water system","Kern",0.4375
+"55","CA3500916","JEHOVAH S WITNESS CHURCH","San Benito","Transient non-community system","KINGDOM HALL (FALLON RD)","Transient non-community system","San Benito",0.0833333333333334
+"56","CA3400377","DELTA BAY CLUB","Sacramento","Transient non-community system","PARK DELTA BAY","Transient non-community system","Sacramento",0.285714285714286
+"57","CA0400091","BUZZTAIL COMMUNITY SERVICE DISTRICT","Butte","Community water system","DEL ORO WATER COMPANY - BUZZTAIL DIST.","Community water system","Butte",0.236842105263158
+"58","CA5200510","SNUG HARBOR MOBILE VILLAGE","Tehama","Community water system","RIVER RANCH MOBILE HOME PARK","Community water system","Tehama",0.357142857142857
+"59","CA5100125","LEXINGTON INN & SUITES","Sutter","Transient non-community system","HARMONY VILLAGE","Community water system","Sutter",0.181818181818182
+"60","CA1000611","KEN'S CLOTHING AND GIFTS","Fresno","Transient non-community system","KEN'S SHOPPING CENTER","Transient non-community system","Fresno",0.458333333333333
+"61","CA5610011","SANTA PAULA WATER SYSTEM","Ventura","Community water system","CITY OF SANTA PAULA","Community water system","Ventura",0.208333333333333
+"62","CA5603116","SUNRISE RANCH","Ventura","Non-Transient non-community system","NISHI QUALITY FLOWERS, INC.","Non-Transient non-community system","Ventura",0.259259259259259
+"63","CA4210700","VANDENBERG AIR FORCE BASE","Santa Barbara","Community water system","AMERICAN WATER O&M, LLC - VAFB","Community water system","Santa Barbara",0.233333333333333
+"64","CA3510007","HOLLISTER/SUNNYSLOPE WTA","San Benito","Community water system","SAN BENITO COUNTY WATER DISTRICT","Community water system","San Benito",0.21875
+"65","CA1503666","SOS CRANE AND TRUCKING","Kern","Non-Transient non-community system","FREON LOGISTICS","Non-Transient non-community system","Kern",0.181818181818182
+"66","CA5400549","CLUB ROYAL OAK","Tulare","Transient non-community system","KINGS RIVER RV RESORT, LLC","Transient non-community system","Tulare",0.153846153846154
+"67","CA4000620","SATCOM WATER SUPPLY--CAMP ROBERTS","San Luis Obispo","Non-Transient non-community system","USASA-POM ENCLAVE - CAMP ROBERTS","Non-Transient non-community system","San Luis Obispo",0.484848484848485
+"68","CA1000199","ALICE MANOR","Fresno","Community water system","FOWLER CARE CENTER","Community water system","Fresno",0.333333333333333
+"69","CA4010006","PASO ROBLES BEACH WATER ASSN","San Luis Obispo","Community water system","CAYUCOS BEACH MUTUAL WATER COMPANY","Community water system","San Luis Obispo",0.382352941176471
+"70","CA4901353","JOHN TYLER WINES","Sonoma","Transient non-community system","BACIGALUPI VINEYARDS","Transient non-community system","Sonoma",0.25
+"71","CA1000607","BLACKBURN FAMILY IRREVOCABLE TRUST","Fresno","Non-Transient non-community system","GOLD LEAF FARMING LLC","Non-Transient non-community system","Fresno",0.176470588235294
+"72","CA4901407","BISAGNO WATER SYSTEM","Sonoma","Transient non-community system","SANTA ROSA LIQUOR AND DELI","Transient non-community system","Sonoma",0.230769230769231
+"73","CA5800893","YUBA COUNTY 4-H CAMP","Yuba","Transient non-community system","YUBA COUNTY LEADERSHIP & ADVENTURE CENTE","Transient non-community system","Yuba",0.375
+"74","CA0400019","PACIFIC HEIGHTS MHP","Butte","Community water system","OROVILLE MOBILE HOME PARK","Community water system","Butte",0.2
+"75","CA4000700","EMMANUEL HEIGHTS","San Luis Obispo","Transient non-community system","GRANITE RIDGE","Transient non-community system","San Luis Obispo",0.25
+"76","CA4200919","GOOD SAMARITAN SHELTER","Santa Barbara","Transient non-community system","THE BRIDGEHOUSE","Transient non-community system","Santa Barbara",0.227272727272727
+"77","CA4710004","CITY OF ETNA","Siskiyou","Community water system","ETNA, CITY OF","Community water system","Siskiyou",0.153846153846154
+"78","CA4700563","FINLANDIA MOTEL","Siskiyou","Transient non-community system","LOGE CAMP MT. SHASTA","Transient non-community system","Siskiyou",0.1
+"79","CA1500597","GRIMMWAY ENTERPRISES, INC.","Kern","Non-Transient non-community system","GRIMMWAY FARMS- FROZEN FOODS","Non-Transient non-community system","Kern",0.392857142857143
+"80","CA2203059","JACK BOYD SCHOOL","Mariposa","Transient non-community system","GREEN MEADOWS OUTDOOR SCHOOL","Transient non-community system","Mariposa",0.357142857142857
+"81","CA2000571","SNOWLINE WATER SYSTEM","Madera","Transient non-community system","SNOWLINE","Transient non-community system","Madera",0.380952380952381
+"82","CA2500811","SULLEY'S TRAILER LODGE","Modoc","Transient non-community system","SULLY'S RV PARK","Transient non-community system","Modoc",0.454545454545455
+"83","CA1503654","VALLEY MARKET WATER SYSTEM","Kern","Transient non-community system","COUNTRYSIDE MKT & RESTRNT - COMANCHE","Transient non-community system","Kern",0.166666666666667
+"84","CA4010011","MORRO BAY WATER DEPARTMENT","San Luis Obispo","Community water system","MORRO BAY PW DEPT - WATER DIVISION","Community water system","San Luis Obispo",0.470588235294118
+"85","CA1000459","JOHNNY QUIK FOOD STORE #127","Fresno","Transient non-community system","ROAD RUNNER FOOD AND FUEL","Transient non-community system","Fresno",0.296296296296296
+"86","CA4901357","RIVERS EDGE KAYAK & CANOE TRIPS","Sonoma","Transient non-community system","COVIN WATER SYSTEM","Transient non-community system","Sonoma",0.161290322580645
+"87","CA4901261","STRYKER SONOMA WINERY & VINEYARDS","Sonoma","Transient non-community system","FOLEY SONOMA WINERY","Transient non-community system","Sonoma",0.454545454545455
+"88","CA3500830","HERNANDEZ LABOR CAMP","San Benito","Non-Transient non-community system","FALLON ROAD LABOR HOUSING","Community water system","San Benito",0.32
+"89","CA4600086","HERRINGTON'S SIERRA PINES","Sierra","Transient non-community system","SIERRA PINES RESORT","Transient non-community system","Sierra",0.24
+"90","CA5010026","CITY OF MODESTO, DE HICKMAN","Stanislaus","Community water system","WATERFORD - HICKMAN","Community water system","Stanislaus",0.444444444444444
+"91","CA1210007","FERNDALE - DEL ORO WATER CO.","Humboldt","Community water system","DEL ORO WATER CO-FERNDALE","Community water system","Humboldt",0.285714285714286
+"92","CA5602133","BEEDY STREET WATER SYSTEM/INDUSTRIAL","Ventura","Non-Transient non-community system","BEEDY WATER COMPANY, LLC","Non-Transient non-community system","Ventura",0.388888888888889
+"93","CA3210004","QUINCY COMMUNITY S.D.","Plumas","Community water system","AMERICAN VALLEY CSD","Community water system","Plumas",0.142857142857143
+"94","CA2600656","CHALFANT MERCANTILE","Mono","Transient non-community system","FLO'S DINER","Transient non-community system","Mono",0.157894736842105
+"95","CA1910240","VALENCIA WATER CO.","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-VALENCIA DIVIS","Community water system","Los Angeles",0.225
+"96","CA5610014","GOLDEN STATE WATER COMPANY - OJAI","Ventura","Community water system","OJAI WATER SYSTEM","Community water system","Ventura",0.303030303030303
+"97","CA2410008","MEADOWBROOK WC","Merced","Community water system","CAL AM - MEADOWBROOK","Community water system","Merced",0.4
+"98","CA3901414","WASTEQUIP MFG CO INC","San Joaquin","Non-Transient non-community system","MCLAUGHLIN WASTE EQUIPMENT INC","Non-Transient non-community system","San Joaquin",0.366666666666667
+"99","CA5401047","CAL TRANS - TIPTON SOUTHBOUND REST STOP","Tulare","Transient non-community system","CALTRANS PHILLIP S. RAINE SFTY RSRA SB","Transient non-community system","Tulare",0.358974358974359
+"100","CA5401045","CAL TRANS-TIPTON NORTHBOUND REST STOP","Tulare","Transient non-community system","CALTRANS PHILLIP S. RAINE SFTY RSRA NB","Transient non-community system","Tulare",0.289473684210526
+"101","CA5401024","CAL TRANS - KINGSBURG REST STOP","Tulare","Transient non-community system","CALTRANS CHESTER H. WARLOW SFTY RSRA","Transient non-community system","Tulare",0.333333333333333
+"102","CA2510800","DEVIL'S GARDEN CONSERV. CAMP","Modoc","Non-Transient non-community system","CAL FIRE-DEVIL'S GARDEN CAMP","Non-Transient non-community system","Modoc",0.357142857142857
+"103","CA4901368","SONOMA WINE COMPANY","Sonoma","Non-Transient non-community system","GRATON COMMERCE CENTER","Non-Transient non-community system","Sonoma",0.227272727272727
+"104","CA4900669","WENDELL WATER COMPANY (PUC)","Sonoma","Community water system","WENDELL LANE MUTUAL WATER COMPANY","Community water system","Sonoma",0.454545454545455
+"105","CA1100436","T&J MOBILEHOME PARK","Glenn","Community water system","ORLAND OAKS MHP","Community water system","Glenn",0.105263157894737
+"106","CA1000540","KOSH PETROLEUM","Fresno","Transient non-community system","BHANDAL, INC","Transient non-community system","Fresno",0.0714285714285714
+"107","CA3610044","DWP - BIG BEAR LAKE/MOONRIDGE","San Bernardino","Community water system","BIG BEAR LAKE DWP - BIG BEAR SYSTEM","Community water system","San Bernardino",0.257142857142857
+"108","CA5400553","TRAVER WATER LLC","Tulare","Community water system","DEL ORO TRAVER DISTRICT","Community water system","Tulare",0.304347826086957
+"109","CA1100404","BLACK BUTTE WATER CO.","Glenn","Community water system","DEL ORO WC - BLACK BUTTE DISTRICT","Community water system","Glenn",0.393939393939394
+"110","CA3100023","ROCKANNA ROYALE MOBILE HOME PARK","Placer","Community water system","AUBURN MOBILE HOME VILLAGE","Community water system","Placer",0.40625
+"111","CA3100029","TIMBERLAND TRACT WATER CO","Placer","Community water system","TAHOE CITY PUD - TIMBERLAND","Community water system","Placer",0.222222222222222
+"112","CA4901373","UPTICK VINEYARDS","Sonoma","Transient non-community system","BACA TASTING ROOM","Transient non-community system","Sonoma",0.117647058823529
+"113","CA3700195","SACRED ROCKS RESERVE","San Diego","Transient non-community system","OUTDOOR WORLD RV PARK","Transient non-community system","San Diego",0.19047619047619
+"114","CA3700235","YOUNG LIFE OAKBRIDGE CAMP","San Diego","Transient non-community system","THE OAK VENTURES, LLC","Transient non-community system","San Diego",0.12
+"115","CA3700291","OCOTILLO OASIS MOBILE HOME PARK","San Diego","Community water system","OCOTILLO OASIS, LLC","Community water system","San Diego",0.483870967741935
+"116","CA3200049","SIERRA SPRINGS RESORT","Plumas","Community water system","DREAM CATCHER CAMPGROUND","Transient non-community system","Plumas",0.125
+"117","CA4901143","FAMILY LIFE CENTER","Sonoma","Non-Transient non-community system","SENECA FAMILY OF AGENCIES","Non-Transient non-community system","Sonoma",0.4
+"118","CA4300964","BFI-THE RECYCLERY","Santa Clara","Non-Transient non-community system","NEWBY ISLAND LANDFILL, REPUBLIC SERVICES","Non-Transient non-community system","Santa Clara",0.2
+"119","CA3700913","APPLE TREE INN","San Diego","Transient non-community system","APPLE WATER IS GOOD","Transient non-community system","San Diego",0.473684210526316
+"120","CA3701217","JULIAN OAKS YOUTH MINISTRIES","San Diego","Transient non-community system","JULIAN OAKS CAMP","Transient non-community system","San Diego",0.464285714285714
+"121","CA4710001","CITY OF DORRIS","Siskiyou","Community water system","DORRIS, CITY OF","Community water system","Siskiyou",0.0666666666666667
+"122","CA0900578","AMERICAN CONSERVATION EXPERIENCE","El Dorado","Transient non-community system","COYOTE DEN","Transient non-community system","El Dorado",0.1875
+"123","CA5610069","LAKE SHERWOOD CSD","Ventura","Community water system","VENTURA CWWD NO. 38 - LAKE SHERWOOD","Community water system","Ventura",0.257142857142857
+"124","CA3701407","ANGELS LANDING COUNTRY INN AND RESORT","San Diego","Transient non-community system","SACRED MOUNTAIN INN","Transient non-community system","San Diego",0.297297297297297
+"125","CA3600010","APPLE VALLEY RANCHOS WC","San Bernardino","Community water system","LIBERTY UTILITIES APPLE VALLEY","Community water system","San Bernardino",0.133333333333333
+"126","CA3701882","SPLIT MOUNTAIN PARK","San Diego","Transient non-community system","OCOTILLO WELLS RV PARK & STORE","Transient non-community system","San Diego",0.233333333333333
+"127","CA2300870","MENDOCINO SATELLITE SCHOOL","Mendocino","Non-Transient non-community system","CASPAR CREEK LEARNING COMMUNITY, INC.","Non-Transient non-community system","Mendocino",0.135135135135135
+"128","CA3601061","RIVERSIDE CEMENT/PLNT ENG","San Bernardino","Non-Transient non-community system","CALPORTLAND ORO GRANDE PLANT","Non-Transient non-community system","San Bernardino",0.107142857142857
+"129","CA3301935","RBI  PACKING, LLC","Riverside","Non-Transient non-community system","BAGDASARIAN PACKING THERMAL, LLC","Non-Transient non-community system","Riverside",0.4375
+"130","CA5200626","PACTIV LLC","Tehama","Non-Transient non-community system","REYNOLDS CONSUMER PRODUCTS  (RED BLUFF)","Non-Transient non-community system","Tehama",0.128205128205128
+"131","CA3110043","MADDEN CREEK WATER COMPANY","Placer","Community water system","TAHOE CITY PUD - MADDEN CREEK","Community water system","Placer",0.206896551724138
+"132","CA3301040","BERMUDA PALMS MOBILE ESTATES","Riverside","Community water system","RIVERDALE ESTATES","Community water system","Riverside",0.428571428571429
+"133","CA3110013","TAHOE CEDARS WATER COMPANY","Placer","Community water system","TAHOE CITY PUD - TAHOE CEDARS","Community water system","Placer",0.379310344827586
+"134","CA5510851","DEPT. OF CORRECTIONS","Tuolumne","Community water system","CDCR - SIERRA CONSERVATION CENTER","Community water system","Tuolumne",0.303030303030303
+"135","CA1503275","PARAMOUNT FARMS - KING FACILITY","Kern","Non-Transient non-community system","WP&A - KING WATER SYSTEM","Non-Transient non-community system","Kern",0.225806451612903
+"136","CA1502759","PARAMOUNT FARMS - HWY 33 FACILITY","Kern","Non-Transient non-community system","WP&A - LOST HILLS WATER SYSTEM","Non-Transient non-community system","Kern",0.181818181818182
+"137","CA0510016","CCWD EBBETTS PASS IMPROVEMENT DISTRICT","Calaveras","Community water system","CCWD - EBBETTS PASS","Community water system","Calaveras",0.394736842105263
+"138","CA4710011","CITY OF YREKA","Siskiyou","Community water system","YREKA, CITY OF","Community water system","Siskiyou",0.0714285714285714
+"139","CA1910048","CASTAIC LAKE WATER AGENCY","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-IMPORTED DIVIS","Community water system","Los Angeles",0.3
+"140","CA4901253","VML WINES","Sonoma","Transient non-community system","FLOWERS WINERY","Transient non-community system","Sonoma",0.357142857142857
+"141","CA3600172","MOLYCORP MINERALS LLC","San Bernardino","Community water system","MP MINE OPERATIONS LLC","Community water system","San Bernardino",0.363636363636364
+"142","CA3601040","GREEN MOUNTAIN RANCH","San Bernardino","Transient non-community system","HIDDEN ACRES","Transient non-community system","San Bernardino",0.2
+"143","CA3600771","CAMP METOCHE","San Bernardino","Transient non-community system","CAMP ALANDALE","Transient non-community system","San Bernardino",0.461538461538462
+"144","CA2900587","MILHOUS SCHOOL","Nevada","Non-Transient non-community system","MOUNTAIN VALLEY CHILD AND FAMILY SERVICE","Non-Transient non-community system","Nevada",0.15
+"145","CA2900619","WOOD CAMP","Nevada","Transient non-community system","WOOD CAMP - WATER SYSTEM","Transient non-community system","Nevada",0.375
+"146","CA0900536","TAHOE CHALET INN","El Dorado","Transient non-community system","ECONO LODGE INN AND SUITES","Transient non-community system","El Dorado",0.192307692307692
+"147","CA1909645","CITY OF LANCASTER, SOCCER COMPLEX","Los Angeles","Transient non-community system","LANCASTER NATIONAL SOCCER CENTER","Transient non-community system","Los Angeles",0.333333333333333
+"148","CA4710003","TOWN OF FORT JONES","Siskiyou","Community water system","FORT JONES, TOWN OF","Community water system","Siskiyou",0.210526315789474
+"149","CA1910241","MESA CREST WATER CO.","Los Angeles","Community water system","LIBERTY UTILITIES - MESA CREST","Community water system","Los Angeles",0.233333333333333
+"150","CA1900080","CAMP COULTER PINES (SOUTH)","Los Angeles","Transient non-community system","CAMP ELK","Transient non-community system","Los Angeles",0.230769230769231
+"151","CA1900952","USFS-COLDBROOK B-11","Los Angeles","Transient non-community system","COLDBROOK CAMPGROUND","Transient non-community system","Los Angeles",0.25
+"152","CA3410023","FRUITRIDGE VISTA WATER COMPANY","Sacramento","Community water system","CAL AM FRUITRIDGE VISTA","Community water system","Sacramento",0.3
+"153","CA1000430","COUNTRY VIEW ALZHEIMER CENTER","Fresno","Community water system","DYCORA TRANSITIONAL LIVING","Community water system","Fresno",0.172413793103448
+"154","CA4901122","MURPHY VINEYARDS LLC","Sonoma","Transient non-community system","RACK & RIDDLE CUSTOM WINE SERVICES","Transient non-community system","Sonoma",0.147058823529412
+"155","CA4600009","SIERRA BROOKS PSD","Sierra","Community water system","SIERRA CSA #5, SIERRA BROOKS","Community water system","Sierra",0.321428571428571
+"156","CA3610060","SBDNO COUNTY SERVICE AREA W-1","San Bernardino","Community water system","BDVWA - GOAT MOUNTAIN ID","Community water system","San Bernardino",0.172413793103448
+"157","CA4910024","GEYSERVILLE WATER WORKS (PUC)","Sonoma","Community water system","CALIFORNIA-AMERICAN GEYSERVILLE (PUC)","Community water system","Sonoma",0.297297297297297
+"158","CA1900975","WHITE ROCK LAKE RV PARK","Los Angeles","Community water system","CALI LAKE RV RESORT","Community water system","Los Angeles",0.347826086956522
+"159","CA1910021","PARK WC - COMPTON","Los Angeles","Community water system","LIBERTY UTILITIES - COMPTON","Community water system","Los Angeles",0.444444444444444
+"160","CA1910161","PARK WC - LYNWOOD","Los Angeles","Community water system","LIBERTY UTILITIES - LYNWOOD","Community water system","Los Angeles",0.444444444444444
+"161","CA4810019","SAVE MART DISTRIBUTION CENTER 802","Solano","Non-Transient non-community system","NORTHBAY LOGISTICS CENTER FKA SAVEMART","Non-Transient non-community system","Solano",0.236842105263158
+"162","CA4710007","CITY OF MONTAGUE","Siskiyou","Community water system","MONTAGUE, CITY OF","Community water system","Siskiyou",0.117647058823529
+"163","CA4901262","RAVENSWOOD (QUARRY) WINERY","Sonoma","Non-Transient non-community system","FRANCISCAN VINEYARDS DBA QUARRY WINERY","Non-Transient non-community system","Sonoma",0.473684210526316
+"164","CA1900612","UNITED METHODIST CAMP COLBY","Los Angeles","Transient non-community system","COLBY RANCH-UNITED METHODIST CAMP","Transient non-community system","Los Angeles",0.454545454545455
+"165","CA4900705","GEYSERVILLE EDUCATIONAL PARK","Sonoma","Non-Transient non-community system","GEYSERVILLE  NEWTECH ACADEMY","Non-Transient non-community system","Sonoma",0.464285714285714
+"166","CA1910255","NEWHALL CWD-TESORO DEL VALLE","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-TESORO DIV.","Community water system","Los Angeles",0.27027027027027
+"167","CA1910096","NEWHALL CWD-NEWHALL","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-NEWHALL DIV.","Community water system","Los Angeles",0.342105263157895
+"168","CA1910250","NEWHALL CWD-PINETREE","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-PINETREE DIV.","Community water system","Los Angeles",0.358974358974359
+"169","CA1910247","NEWHALL CWD-CASTAIC","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-CASTAIC DIV.","Community water system","Los Angeles",0.342105263157895
+"170","CA0605011","ARBUCKLE WATER COMPANY","Colusa","Community water system","DEL ORO WC - ARBUCKLE DISTRICT","Community water system","Colusa",0.2
+"171","CA1900752","USFS-SAUGUS RANGER STA/WORK AREA III S-1","Los Angeles","Non-Transient non-community system","TEXAS CANYON RANGER STATION","Non-Transient non-community system","Los Angeles",0.325
+"172","CA2700850","CENTRAL COAST GROWERS WS","Monterey","Non-Transient non-community system","ALTMAN PLANTS WS #03 - ESPINOSA 303","Non-Transient non-community system","Monterey",0.228571428571429
+"173","CA2700853","COLOR SPOT NURSERY WS #01","Monterey","Non-Transient non-community system","ALTMAN PLANTS WS #04 -ESP 420 (PREV CS1)","Non-Transient non-community system","Monterey",0.175
+"174","CA5200688","CHILDS MEADOW RESORT STORE","Tehama","Transient non-community system","VILLAGE AT THE HIGHLANDS","Transient non-community system","Tehama",0.153846153846154
+"175","CA1900751","EASTSIDE ELEMENTARY","Los Angeles","Non-Transient non-community system","EASTSIDE UNION SCHOOL DISTRICT","Non-Transient non-community system","Los Angeles",0.366666666666667
+"176","CA2702004","RALPH LANE  WS","Monterey","Community water system","CAL AM WATER COMPANY - RALPH LANE","Community water system","Monterey",0.212121212121212
+"177","CA3702338","WESTERN HORIZONS RAMONA CANYON","San Diego","Transient non-community system","RAMONA OAKS RV RESORT","Transient non-community system","San Diego",0.2
+"178","CA2701152","YODER BROTHERS WS","Monterey","Non-Transient non-community system","FLORICULTURA PACIFIC WS","Non-Transient non-community system","Monterey",0.217391304347826
+"179","CA3702706","HIGH LAND EAST TRAILER PARK","San Diego","Transient non-community system","BOULEVARD PINES MOBILE HOME AND RV PARK","Transient non-community system","San Diego",0.333333333333333
+"180","CA3700047","T.C. WORTHY CASH & CARRY, INC.","San Diego","Transient non-community system","TECATE SUPERMARKET","Transient non-community system","San Diego",0.233333333333333
+"181","CA2600714","LOWER SWALL MEADOWS WATER SYSTEM","Mono","Community water system","WHEELER CREST CSD","Community water system","Mono",0.1875
+"182","CA2600622","SIERRA EAST MOBILE HOME COMMUNITY","Mono","Community water system","SIERRA EAST HOA","Community water system","Mono",0.424242424242424
+"183","CA3700422","STUART WATER COMPANY","San Diego","Community water system","LAGUNA MOUNTIAN MUTUAL WATER CO.","Community water system","San Diego",0.25
+"184","CA3303035","LOS GATOS TRAILER PARK","Riverside","Community water system","THERMAL PARK","Community water system","Riverside",0.363636363636364
+"185","CA3400130","GREGG WATER CO","Sacramento","Community water system","THE COURTLAND GROUP","Community water system","Sacramento",0.210526315789474
+"186","CA3900586","SYCAMORE MOBILE HOME PARK","San Joaquin","Community water system","B&G MOBILE HOME PARK LLC WS","Community water system","San Joaquin",0.444444444444444
+"187","CA3600215","SAN BERNARDINO CO MEDICAL CENTER","San Bernardino","Community water system","GILBERT STREET COMPLEX","Community water system","San Bernardino",0.25
+"188","CA1502133","TREEHOUSE CALIFORNIA ALMONDS","Kern","Non-Transient non-community system","V LIONS OPS WATER SYSTEM","Non-Transient non-community system","Kern",0.142857142857143
+"189","CA5000577","ASHWANI SHARMA","Stanislaus","Transient non-community system","WESTLEY PROPERTY LLC","Transient non-community system","Stanislaus",0.1
+"190","CA5000013","OID #45 - LOUIS MEYER","Stanislaus","Community water system","OID #45","Community water system","Stanislaus",0.333333333333333
+"191","CA3600149","LAW'S CIDER MILL","San Bernardino","Transient non-community system","OG INVESTMENTS, LLC","Transient non-community system","San Bernardino",0.157894736842105
+"192","CA4900912","KENWOOD RESTAURANT & BAR","Sonoma","Transient non-community system","SALT & STONE RESTAURANT","Transient non-community system","Sonoma",0.291666666666667
+"193","CA3601064","OMYA (CALIFORNIA) INC","San Bernardino","Non-Transient non-community system","OMYA CALIFORNIA, A DIVISION OF OMYA INC","Non-Transient non-community system","San Bernardino",0.461538461538462
+"194","CA3900624","WEST LANE MOBILE HOME PARK","San Joaquin","Community water system","IL VINETO","Community water system","San Joaquin",0.192307692307692
+"195","CA1000511","NEW BEGINNINGS CHURCH","Fresno","Transient non-community system","CROSSOVER COMMUNITY CHURCH","Transient non-community system","Fresno",0.384615384615385
+"196","CA3301863","TRINITY - ANZA","Riverside","Transient non-community system","OLIVET UNIVERSITY","Community water system","Riverside",0.117647058823529
+"197","CA4901388","CARNEROS BREWING COMPANY","Sonoma","Transient non-community system","HEIRS OF MY DREAM WINERY, INC.","Transient non-community system","Sonoma",0.233333333333333
+"198","CA1000221","WASHINGTON UNION HIGH SCHOOL","Fresno","Non-Transient non-community system","EASTON AUTHORITY JPA","Non-Transient non-community system","Fresno",0.321428571428571
+"199","CA3600386","TRINITY OASIS PALMS INC","San Bernardino","Community water system","FOOTHILL ESTATES MHP","Community water system","San Bernardino",0.217391304347826
+"200","CA3601051","CEMEX CONSTRUCTION MATERIALS AL","San Bernardino","Non-Transient non-community system","CEMEX - ALABAMA","Non-Transient non-community system","San Bernardino",0.32258064516129
+"201","CA4500037","WHEELABRATOR SHASTA ENERGY","Shasta","Non-Transient non-community system","SHASTA-SUSTAINABLE RESOURCES MANAGEMENT","Non-Transient non-community system","Shasta",0.230769230769231
+"202","CA5000494","HYPOWER HYDRAULICS","Stanislaus","Non-Transient non-community system","TURLOCK MACHINE WORKS","Non-Transient non-community system","Stanislaus",0.142857142857143
+"203","CA5000498","PATCHETTS FORD MERCURY","Stanislaus","Non-Transient non-community system","GOLDEN STATE PFT PROPERTIES LLC","Non-Transient non-community system","Stanislaus",0.193548387096774
+"204","CA5610010","RIO PLAZA WATER CO INC","Ventura","Community water system","CAL AMERICAN WC - RIO PLAZA","Community water system","Ventura",0.259259259259259
+"205","CA3600772","UCLA UNICAMP","San Bernardino","Transient non-community system","UCLA UNICAMP - CAMP RIVER GLEN","Transient non-community system","San Bernardino",0.4
+"206","CA2000560","SUGAR PINE CHRISTIAN CAMPS","Madera","Transient non-community system","CAMP SUGAR PINE","Transient non-community system","Madera",0.230769230769231
+"207","CA4500071","DIGGER BAY MARINA","Shasta","Transient non-community system","PELORIA DIGGER BAY LLC","Transient non-community system","Shasta",0.363636363636364
+"208","CA1700595","CAL 20 VILLAGE","Lake","Community water system","CAL 20 VILLAGE AND MEADOW POINTE PARK","Community water system","Lake",0.378378378378378
+"209","CA4710009","CITY OF WEED","Siskiyou","Community water system","WEED, CITY OF","Community water system","Siskiyou",0.153846153846154
+"210","CA0600013","PRINCETON WATER DISTRICT","Colusa","Community water system","COLUSA CO. WWD #2 - PRINCETON","Community water system","Colusa",0.241379310344828
+"211","CA5200531","RIVER INN MOBILE HOME PARK","Tehama","Community water system","RIVER POINTE LANDING MHP","Community water system","Tehama",0.346153846153846
+"212","CA1910017","SANTA CLARITA WATER DIVISION","Los Angeles","Community water system","SANTA CLARITA VALLEY W.A.-SANTA CLARITA","Community water system","Los Angeles",0.487179487179487
+"213","CA1500491","INTERSTATE 5 PROPERTIES","Kern","Non-Transient non-community system","INTERSTATE 5 UILITY COMPANY","Non-Transient non-community system","Kern",0.481481481481482
+"214","CA2210907","MUSD - CATHEYS VALLEY ELEMENTARY SCHOOL","Mariposa","Non-Transient non-community system","MUSD - SIERRA FOOTHILL CHARTER SCHOOL","Non-Transient non-community system","Mariposa",0.435897435897436
+"215","CA5200562","PONDEROSA SKY RANCH WATER","Tehama","Community water system","SKY VIEW COUNTY WATER","Community water system","Tehama",0.32
+"216","CA3600783","BLUE SKY MEADOWS SCIENCE INSTITUTE","San Bernardino","Transient non-community system","CAMP AGUDAH WEST","Transient non-community system","San Bernardino",0.176470588235294
+"217","CA4710002","CITY OF DUNSMUIR","Siskiyou","Community water system","DUNSMUIR, CITY OF","Community water system","Siskiyou",0
+"218","CA1900008","BIG ROCK CREEK CAMP","Los Angeles","Transient non-community system","HUTTOPIA PARADISE SPRINGS","Transient non-community system","Los Angeles",0.12
+"219","CA2300663","HARWOOD WATER SYSTEM","Mendocino","Community water system","BRANSCOMB MOBILE HOME PARK","Community water system","Mendocino",0.153846153846154
+"220","CA4300608","GAVILAN JR. COLLEGE","Santa Clara","Non-Transient non-community system","GAVILAN JOINT COMMUNITY COLLEGE DISTRICT","Non-Transient non-community system","Santa Clara",0.425
+"221","CA5200657","RIVERVIEW AVENUE ESTATES","Tehama","Community water system","NORCAL WATER WORKS","Community water system","Tehama",0.25
+"222","CA4300791","HGST, INC.","Santa Clara","Non-Transient non-community system","WESTERN DIGITAL TECHNOLOGIES, INC.","Non-Transient non-community system","Santa Clara",0.235294117647059
+"223","CA1700670","NARROWS LODGE","Lake","Transient non-community system","NARROWS FAMILY RESORT","Transient non-community system","Lake",0.476190476190476
+"224","CA4300994","RIVERSIDE RV PARK","Santa Clara","Community water system","COYOTE VALLEY RV RESORT","Community water system","Santa Clara",0.304347826086957
+"225","CA1907016","AGUA DULCE CHRISTIAN CHURCH","Los Angeles","Transient non-community system","SHEPHERD OF THE HILLS","Transient non-community system","Los Angeles",0.148148148148148
+"226","CA2701257","GARRAPATA WC INC","Monterey","Community water system","CAL AM WATER COMPANY - GARRAPATA","Community water system","Monterey",0.1875
+"227","CA5400987","FOUNTAIN SPRINGS EL TAPATIO","Tulare","Transient non-community system","OLD STAGE SALOON AT FOUNTAIN SPRINGS","Transient non-community system","Tulare",0.25
+"228","CA2202036","KOA CAMPGROUND","Mariposa","Transient non-community system","AUTOCAMP-YOSEMITE","Transient non-community system","Mariposa",0.294117647058823
+"229","CA4010040","RURAL WATER COMPANY","San Luis Obispo","Community water system","GOLDEN STATE WATER COMPANY-CYPRESS RIDGE","Community water system","San Luis Obispo",0.375
+"230","CA5403106","LO BUE BROS, INC. - EXETER","Tulare","Non-Transient non-community system","EXETER-IVANHOE CITRUS ASSOCIATION","Non-Transient non-community system","Tulare",0.121212121212121
+"231","CA4901365","NORTH COAST FISHERIES","Sonoma","Non-Transient non-community system","MICHAEL LUCAS WATER SYSTEM","Non-Transient non-community system","Sonoma",0.192307692307692
+"232","CA2010015","PARAMOUNT FARMS-FIREBAUGH","Madera","Non-Transient non-community system","WP&A-FIREBAUGH WATER SYSTEM","Non-Transient non-community system","Madera",0.148148148148148
+"233","CA1200706","MIDWAY RV PARK","Humboldt","Community water system","TRINIDAD EXTENDED STAY RV","Community water system","Humboldt",0.24
+"234","CA1010062","WATER WORKS DISTRICT 18 - MIRA BELLA","Fresno","Community water system","FCWWD #18/MIRA BELLA","Community water system","Fresno",0.388888888888889
+"235","CA1010051","FRESNO CO WW DIST 18 - FRIANT","Fresno","Community water system","FCWWD #18/FRIANT","Community water system","Fresno",0.448275862068966
+"236","CA1000564","PARAMOUNT FARMS - EL DORADO","Fresno","Non-Transient non-community system","WONDERFUL PISTACHIOS & ALMONDS-EL DORADO","Non-Transient non-community system","Fresno",0.35
+"237","CA3610118","YERMO WATER CO","San Bernardino","Community water system","APPLE VALLEY RANCHOS WATER CO - YERMO","Community water system","San Bernardino",0.324324324324324
+"238","CA3901336","PALLET KING","San Joaquin","Non-Transient non-community system","WESTERN PALLET SUPPLY & LOGISTICS","Non-Transient non-community system","San Joaquin",0.242424242424242
+"239","CA5200574","LARKSPUR MEADOWS WATER CO.","Tehama","Community water system","DEL ORO WC - LARKSPUR MEADOWS","Community water system","Tehama",0.206896551724138
+"240","CA5400504","A & A  MHP","Tulare","Community water system","PORTERVILLE MOBILE VILLAGE","Community water system","Tulare",0.0769230769230769
+"241","CA5400506","NO KAWEAH MUTUAL WATER CO","Tulare","Community water system","NORTH KAWEAH MWC","Community water system","Tulare",0.4
+"242","CA5000284","RAINBOW FIELDS","Stanislaus","Transient non-community system","RAINBOW SPORTS COMPLEX","Transient non-community system","Stanislaus",0.409090909090909
+"243","CA5000316","CURTIS INVESTMENTS","Stanislaus","Community water system","HAKAM MISSON","Community water system","Stanislaus",0.166666666666667
+"244","CA5000384","A & M INDUSTRIES INC","Stanislaus","Non-Transient non-community system","GREENLAW MODESTO INVESTORS LLC","Non-Transient non-community system","Stanislaus",0.3
+"245","CA5000141","LIBITZKY PROPERTY MANAGEMENT CORP.","Stanislaus","Non-Transient non-community system","LIBITZKY","Non-Transient non-community system","Stanislaus",0.235294117647059
+"246","CA1010017","FRESNO CO WATERWORKS DIST 41","Fresno","Community water system","FCWWD #41/SHAVER LAKE","Community water system","Fresno",0.142857142857143
+"247","CA4500293","PACKERS BAY MARINA","Shasta","Transient non-community system","SHASTA MARINA AT PACKERS BAY","Transient non-community system","Shasta",0.25
+"248","CA2800587","DUFFY S MYRTLEDALE RESORT","Napa","Transient non-community system","DUFFY'S NAPA VALLEY REHAB","Transient non-community system","Napa",0.44
+"249","CA2702456","MRWPCA TREATMENT PLANT WS","Monterey","Non-Transient non-community system","MONTEREY ONE WATER (FORMERLY MRWPCA)","Non-Transient non-community system","Monterey",0.194444444444444
+"250","CA2702482","COLOR SPOT NURSERY WS #02","Monterey","Non-Transient non-community system","ALTMAN PLANTS WS #05 -ESP 325 (PREV CS2)","Non-Transient non-community system","Monterey",0.175
+"251","CA4100540","OKU INC","San Mateo","Community water system","OKU INCORPORATED","Community water system","San Mateo",0.4375
+"252","CA3400424","ARCO AM PM","Sacramento","Transient non-community system","JACKSON SHELL (SWS)","Transient non-community system","Sacramento",0.210526315789474
+"253","CA0707534","LINDQUIST LANDING MARINA","Contra Costa","Transient non-community system","BRENTWOOD MARINA","Transient non-community system","Contra Costa",0.375
+"254","CA2000535","BEASORE MEADOWS","Madera","Transient non-community system","BEASORE MUTUAL WATER CO.","Transient non-community system","Madera",0.458333333333333
+"255","CA2000536","HIGH SIERRA PROPERTY OWNERS ASSO.","Madera","Transient non-community system","HIGH SIERRA MEADOW MUTUAL WATER","Transient non-community system","Madera",0.424242424242424
+"256","CA2000545","DAYS INN","Madera","Transient non-community system","GATEWAY INN","Transient non-community system","Madera",0.454545454545455
+"257","CA3901181","AMERON INTERNATIONAL","San Joaquin","Non-Transient non-community system","NORTHWEST PIPE COMPANY","Non-Transient non-community system","San Joaquin",0.136363636363636
+"258","CA3610003","APPLE VALLEY RANCHOS WC","San Bernardino","Community water system","LIBERTY UTILITIES (AV RANCHOS) CORP.","Community water system","San Bernardino",0.333333333333333
+"259","CA3400296","TRAVEL LODGE MOBILE HOME PARK","Sacramento","Community water system","SAC CITY MOBILE HOME COMMUNITY LP","Community water system","Sacramento",0.333333333333333
+"260","CA0706049","BON GUSTOS","Contra Costa","Transient non-community system","ALOHA CLUB","Transient non-community system","Contra Costa",0
+"261","CA4500022","HAT CREEK WATER COMPANY, LLC","Shasta","Community water system","DEL ORO WATER CO. - HAT CREEK DISTRICT","Community water system","Shasta",0.315789473684211
+"262","CA3901278","COLOR SPOT, LODI","San Joaquin","Non-Transient non-community system","PLUG CONNECTION LODI","Non-Transient non-community system","San Joaquin",0.35
+"263","CA0706050","THOMAS DENOVA LLC WATER SYSTEM","Contra Costa","Non-Transient non-community system","WILLOW PASS BUSSINESS PARK WATER SYSTEM","Non-Transient non-community system","Contra Costa",0.487179487179487
+"264","CA0707625","GOLDEN EAGLE SMALL WATER SYSTEM","Contra Costa","Non-Transient non-community system","MARATHON MARTINEZ WATER SYSTEM","Non-Transient non-community system","Contra Costa",0.451612903225806
+"265","CA5800576","FRESH MARKET","Yuba","Transient non-community system","SUPER POWER MART","Transient non-community system","Yuba",0.25
+"266","CA3901309","PACIFIC TRIPLE E LTD","San Joaquin","Non-Transient non-community system","GLASSFAB TEMPERING SERVICES INC.","Non-Transient non-community system","San Joaquin",0.28125
+"267","CA3901338","RO LAB AMERICAN RUBBER CO","San Joaquin","Non-Transient non-community system","DYNATECT RO-LAB, INC.","Non-Transient non-community system","San Joaquin",0.16
+"268","CA5800831","PARADISE APOSTOLIC CAMP","Yuba","Transient non-community system","BAPTIST CHRISTIAN CAMP OF CA","Transient non-community system","Yuba",0.321428571428571
+"269","CA2000806","THE NEW BUCKHORN SALOON & REST.","Madera","Transient non-community system","BUCKHORN BAR AND  RESTAURANT","Transient non-community system","Madera",0.354838709677419
+"270","CA2000817","NEW JADE GAZEBO/DIRTY DONKEY","Madera","Transient non-community system","SUGAR PINE PIZZA","Transient non-community system","Madera",0.142857142857143
+"271","CA2000848","SAND CASTLE DAY CARE","Madera","Non-Transient non-community system","BLACKHAWK CENTER WATER SYSTEM","Non-Transient non-community system","Madera",0.275862068965517
+"272","CA4000747","LAST STAGE WEST","San Luis Obispo","Transient non-community system","HALFWAY STATION","Transient non-community system","San Luis Obispo",0.133333333333333
+"273","CA3901373","EUSD-HEAD START CHILD DEV SERVICES INC","San Joaquin","Transient non-community system","EUSD-GATEWAY CHARTER","Non-Transient non-community system","San Joaquin",0.315789473684211
+"274","CA2000203","OUTBACK INC - WATER ONLY","Madera","Non-Transient non-community system","OUTBACK INC","Non-Transient non-community system","Madera",0.458333333333333
+"275","CA2700970","CHEROKEE ACRES MHP WS","Monterey","Community water system","ROYAL SIERRA ESTATES WS","Community water system","Monterey",0.260869565217391
+"276","CA4500338","SEVEN HILLS LAND & CATTLE COMPANY","Shasta","Transient non-community system","ANSELMO VINEYARDS / SEVEN HILL LLC","Transient non-community system","Shasta",0.176470588235294
+"277","CA2803886","RUTHERFORD GROVE WINERY","Napa","Transient non-community system","PESTONI FAMILY ESTATE WINERY","Transient non-community system","Napa",0.392857142857143
+"278","CA3901428","MARTINIS BAIT & TACKLE","San Joaquin","Transient non-community system","IDLE WILD MARKET","Transient non-community system","San Joaquin",0.272727272727273
+"279","CA1910147","SATIVA-L.A. CWD","Los Angeles","Community water system","SATIVA WATER SYSTEM","Community water system","Los Angeles",0.368421052631579
+"280","CA5403137","ARMY CORPS ENG-SLICK ROCK","Tulare","Transient non-community system","USACE-SLICK ROCK DAY USE","Transient non-community system","Tulare",0.2
+"281","CA5400757","ARMY CORPS ENG-HORSE CREEK","Tulare","Transient non-community system","USACE-HORSE CREEK CAMPGROUND","Transient non-community system","Tulare",0.178571428571429
+"282","CA5400755","ARMY CORPS ENG-REC AREA","Tulare","Transient non-community system","USACE-KAWEAH REC AREA","Transient non-community system","Tulare",0.434782608695652
+"283","CA5403074","KRAFT FOODS TULARE SOUTH","Tulare","Non-Transient non-community system","KRAFT HEINZ FOODS COMPANY","Non-Transient non-community system","Tulare",0.32
+"284","CA2800811","ACACIA WINERY","Napa","Transient non-community system","LIANA ESTATE","Transient non-community system","Napa",0.230769230769231
+"285","CA4400757","SALSIPUEDES ELEMENTARY","Santa Cruz","Non-Transient non-community system","ALIANZA CHARTER SCHOOL/WCSA","Non-Transient non-community system","Santa Cruz",0.111111111111111
+"286","CA3901213","AVALOS, SILVIA","San Joaquin","Community water system","SUNNY ROAD WATER SYSTEM","Community water system","San Joaquin",0.130434782608696
+"287","CA5400875","DIXON WATER COMPANY","Tulare","Community water system","VILLAGE APARTMENTS","Community water system","Tulare",0.157894736842105
+"288","CA5403127","MONROVIA VENICE HILLS NURSERY","Tulare","Non-Transient non-community system","MONROVIA NURSERY - VENICE HILLS","Non-Transient non-community system","Tulare",0.419354838709677
+"289","CA5403030","DRY CREEK DELI","Tulare","Transient non-community system","JACK GRIGGS INC.","Transient non-community system","Tulare",0.1875
+"290","CA5400873","CHARTER ALTERNATIVES ACADEMY","Tulare","Non-Transient non-community system","UNION SCHOOL","Non-Transient non-community system","Tulare",0.142857142857143
+"291","CA2900501","BRASS RAIL WATER SYSTEM","Nevada","Transient non-community system","BIGLEYS MARKET / BRASS RAIL","Transient non-community system","Nevada",0.222222222222222
+"292","CA5402046","GNI WATERMAN LLC","Tulare","Non-Transient non-community system","WATERMAN VALVE, LLC","Non-Transient non-community system","Tulare",0.421052631578947
+"293","CA5400536","KINGS RIVER ESTATES","Tulare","Community water system","KINGS RIVER ESTATES MUTUAL WATER COMPANY","Community water system","Tulare",0.475
+"294","CA5403114","TRAVER FEEDMILL PWS","Tulare","Non-Transient non-community system","FOSTER FARMS TRAVER FEEDMILL","Non-Transient non-community system","Tulare",0.392857142857143
+"295","CA2400234","ATWATER LDS","Merced","Transient non-community system","LDS CHURCH ATWATER","Transient non-community system","Merced",0.166666666666667
+"296","CA3301044","Hidden Valley Nature Center","Riverside","Transient non-community system","HIDDEN VALLEY NATURE CENTER","Transient non-community system","Riverside",0.259259259259259
+"297","CA1510033","CAL WATER SERVICE CO-KERNVILLE SYSTEM","Kern","Community water system","CWS - KERNVILLE","Community water system","Kern",0.351351351351351
+"298","CA4110017","CITY OF MENLO PARK","San Mateo","Community water system","MENLO PARK MUNICIPAL WATER","Community water system","San Mateo",0.230769230769231
+"299","CA5401084","BADGER MTN HOUSE INC","Tulare","Transient non-community system","BAKER MOUNTAIN HOUSE","Transient non-community system","Tulare",0.45
+"300","CA4800727","CAMPBELL SOUP SUPPLY CO - DIXON CANNING","Solano","Non-Transient non-community system","CAMPBELL SOUP DIXON","Non-Transient non-community system","Solano",0.487179487179487
+"301","CA5403080","FRUIT PATCH INC","Tulare","Non-Transient non-community system","LEGACY PACKING","Non-Transient non-community system","Tulare",0.333333333333333
+"302","CA4901414","SOLANA GOLD","Sonoma","Transient non-community system","JJAPT BLOOMFIELD","Transient non-community system","Sonoma",0.25
+"303","CA0706015","NEW DOCS MARINA","Contra Costa","Transient non-community system","DELTA WAVES","Transient non-community system","Contra Costa",0.2
+"304","CA2600529","MONO VILLAGE RESTAURANT/STORE","Mono","Transient non-community system","ANNETT'S MONO VILLAGE","Transient non-community system","Mono",0.137931034482759
+"305","CA3302102","A MART GAS","Riverside","Transient non-community system","ANZA PETROLEUM INC","Transient non-community system","Riverside",0.222222222222222
+"306","CA4200721","NAPLES WATER COMPANY","Santa Barbara","Community water system","NAPLES","Community water system","Santa Barbara",0.3
+"307","CA5700555","HACIENDA MOTEL","Yolo","Transient non-community system","BONFIRE VILLAGE HOTEL","Transient non-community system","Yolo",0.380952380952381
+"308","CA2000672","ROBERT JOHNSON FARMS, INC","Madera","Non-Transient non-community system","RIVER RANCH 14","Non-Transient non-community system","Madera",0.24
+"309","CA3301571","MCINTYRE - RIV. COUNTY PARKS","Riverside","Transient non-community system","DESTINY MCINTYRE RV CAMPGROUND","Transient non-community system","Riverside",0.233333333333333
+"310","CA4200893","BRIDLEWOOD WINERY","Santa Barbara","Transient non-community system","SCOTT EHRLICH WATER SYSTEM","Transient non-community system","Santa Barbara",0.230769230769231
+"311","CA4200931","CURTIS WINERY","Santa Barbara","Transient non-community system","ANDREW MURRAY VINEYARD","Transient non-community system","Santa Barbara",0.318181818181818
+"312","CA5700712","DUNNIGAN WATER WORKS","Yolo","Community water system","CAL AM - DUNNIGAN","Community water system","Yolo",0.1
+"313","CA3901031","ORCHARD RESTAURANT","San Joaquin","Community water system","132 INVESTMENTS WATER SYSTEM","Community water system","San Joaquin",0.178571428571429
+"314","CA4200832","FROZSUN FOODS","Santa Barbara","Non-Transient non-community system","SURE FRESH PRODUCE","Non-Transient non-community system","Santa Barbara",0.222222222222222
+"315","CA4200678","SANTA ANITA MWC","Santa Barbara","Community water system","SANTA ANITA MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.46875
+"316","CA4500085","JACOB'S WELL WATER SYSTEM","Shasta","Transient non-community system","LIVING SPRINGS RV & CABINS RESORT","Transient non-community system","Shasta",0.181818181818182
+"317","CA2300837","YOKAYO WATER SYSTEM","Mendocino","Community water system","YOKAYO TRIBE OF INDIANS","Community water system","Mendocino",0.391304347826087
+"318","CA3106491","JEHOVAH'S WITNESS/VISTA CONG.","Placer","Transient non-community system","KINGDOM HALL OF JEHOVAH'S WITNESSES, BER","Transient non-community system","Placer",0.35
+"319","CA4200616","SKYLINE PARK & SERVICE CO.","Santa Barbara","Community water system","SKYLINE PARK","Community water system","Santa Barbara",0.461538461538462
+"320","CA2400058","CATTLEMEN'S RESTAURANT","Merced","Transient non-community system","DOS PALOS Y AUCTION YARD","Transient non-community system","Merced",0.125
+"321","CA2600533","HISTORIC MONO INN","Mono","Transient non-community system","MONO INN","Transient non-community system","Mono",0.470588235294118
+"322","CA2800556","BROKEN HILL 1 LLC","Napa","Non-Transient non-community system","OAKVILLE GROCERY CO.","Non-Transient non-community system","Napa",0.1
+"323","CA3705060","WILL BILL S RETAIL CENTER","San Diego","Transient non-community system","CAMPO GROUP LLC","Transient non-community system","San Diego",0.16
+"324","CA2800562","FRANCISCAN WINERY","Napa","Non-Transient non-community system","FRANCISCAN VINEYARDS DBA THE PRISONER WI","Non-Transient non-community system","Napa",0.375
+"325","CA3200071","BUCKS LAKE LODGE","Plumas","Transient non-community system","BUCKS LAKE LODGE & TIMBERLINE LODGE","Transient non-community system","Plumas",0.457142857142857
+"326","CA3200138","JD TRAILER RANCH","Plumas","Community water system","MEADOW EDGE MHP","Community water system","Plumas",0.0625
+"327","CA0510019","WALLACE COMMUNITY SERVICES DISTRICT","Calaveras","Community water system","CCWD - WALLACE","Community water system","Calaveras",0.142857142857143
+"328","CA3200195","GREENHAVEN HOME OWNER WATER ASSN.","Plumas","Community water system","GREENHAVEN HOA","Community water system","Plumas",0.424242424242424
+"329","CA3901467","GLORIANN FARM INC","San Joaquin","Non-Transient non-community system","MB FARMS","Non-Transient non-community system","San Joaquin",0.294117647058823
+"330","CA3901471","FARMINGTON FRESH SALES LLC","San Joaquin","Transient non-community system","FRESH INNOVATIONS LLC","Transient non-community system","San Joaquin",0.307692307692308
+"331","CA4800558","EL TAPATIO CAFE","Solano","Transient non-community system","EL PITAYO RESTAURANT","Transient non-community system","Solano",0.3
+"332","CA0310021","AMADOR COUNTY SERVICE AREA #3/UNIT 6","Amador","Community water system","AWA - CAMANCHE VILLAGE","Community water system","Amador",0.25
+"333","CA1300632","BLU-IN CAFE","Imperial","Transient non-community system","OW CAFE, LLC","Transient non-community system","Imperial",0.0833333333333334
+"334","CA0300037","LAKE AMADOR RECREATION AREA","Amador","Community water system","JACKSON VALLEY IRRIGATION DISTRICT","Community water system","Amador",0.323529411764706
+"335","CA0310003","AWA, SUTTER CREEK","Amador","Community water system","AWA, TANNER","Community water system","Amador",0.411764705882353
+"336","CA1000588","PANOCHE RANCH - FRANK LOGOLUSO FARMS","Fresno","Transient non-community system","BEAR FLAG FARMS","Transient non-community system","Fresno",0.333333333333333
+"337","CA4900533","COMMON WATER COMPANY (PUC)","Sonoma","Community water system","MORTON'S WARM SPRINGS / SONOMA SPRINGS","Community water system","Sonoma",0.263157894736842
+"338","CA1503226","QUAIL VALLEY WATER DIST-WESTSIDE SYSTEM","Kern","Community water system","QVWD-WEST & EAST COMBINED WATER SYSTEM","Community water system","Kern",0.307692307692308
+"339","CA5500245","MOUNTAIN SPRINGS GOLF COURSE","Tuolumne","Transient non-community system","TELELI GOLF CLUB","Transient non-community system","Tuolumne",0.357142857142857
+"340","CA4300951","SYNGENTA SEEDS, INC.- PLANT","Santa Clara","Non-Transient non-community system","REFORESTATION TECHNOLOGIES INTERNATIONAL","Non-Transient non-community system","Santa Clara",0.225
+"341","CA3301750","THE WILDLANDS CONSERVANCY","Riverside","Transient non-community system","WHITEWATER PRESERVE","Transient non-community system","Riverside",0.32
+"342","CA4710010","CITY OF TULELAKE","Siskiyou","Community water system","TULELAKE, CITY OF","Community water system","Siskiyou",0
+"343","CA4900841","VINEYARDS INN","Sonoma","Transient non-community system","TIPS ROADSIDE","Transient non-community system","Sonoma",0.230769230769231
+"344","CA4900935","COPPOLA WINERY #9","Sonoma","Non-Transient non-community system","VIRGINIA DARE WINERY","Non-Transient non-community system","Sonoma",0.25
+"345","CA2000951","RANCHO DE VINA","Madera","Transient non-community system","SWS LAND DEVELOPMENT INC","Transient non-community system","Madera",0.25
+"346","CA1510800","CALIF CORRECTNL INST TEHACHAPI","Kern","Community water system","CCI - TEHACHAPI","Community water system","Kern",0.433333333333333
+"347","CA5400679","MOTEL 99","Tulare","Transient non-community system","99 PALMS INN AND SUITES","Transient non-community system","Tulare",0.0869565217391305
+"348","CA5403073","SLATE MTN HOMEOWNERS ASSOCIATION","Tulare","Transient non-community system","SLATE MOUNTAIN HOA","Transient non-community system","Tulare",0.375
+"349","CA3200185","Lower Bucks Lake LDS Camp","Plumas","Transient non-community system","LOWER BUCKS LAKE LDS CAMP","Transient non-community system","Plumas",0.44
+"350","CA3200207","PSREC- Portola Office","Plumas","Non-Transient non-community system","PLUMAS SIERRA RURAL ELECTRIC PORTOLA","Non-Transient non-community system","Plumas",0.166666666666667
+"351","CA2400220","STEVINSON RANCH GOLF CLUB","Merced","Non-Transient non-community system","STEVINSON RANCH MAINT. SHOP/THE GROVE","Transient non-community system","Merced",0.486486486486487
+"352","CA2203051","SEVEN DAY ADVENTIST CAMP","Mariposa","Transient non-community system","CAMP WAWONA","Transient non-community system","Mariposa",0.166666666666667
+"353","CA5400538","TCOVE","Tulare","Transient non-community system","ACCELERATED CHARTER HIGH SCHOOL","Non-Transient non-community system","Tulare",0.0967741935483871
+"354","CA0202550","CO. OF ALPINE HEALTH &HOME SERVICE BLDG.","Alpine","Transient non-community system","ALPINE COUNTY HEALTH AND HUMAN SERVICES","Transient non-community system","Alpine",0.375
+"355","CA5402022","TRAVER VALLEY FARMS","Tulare","Transient non-community system","BRAVO FARMS TRAVER","Transient non-community system","Tulare",0.315789473684211
+"356","CA5400750","KAWEAH PARK RESORT","Tulare","Transient non-community system","SEQUOIA CAMPGROUND AND LODGE","Transient non-community system","Tulare",0.178571428571429
+"357","CA3601101","DESERT PETRO INC","San Bernardino","Transient non-community system","NEWBERRY CHEVRON","Transient non-community system","San Bernardino",0.3125
+"358","CA2400172","SANDY MUSH DETENTION CENTER","Merced","Community water system","JOHN LATORACCA CORRECTIONAL FACILITY","Community water system","Merced",0.25
+"359","CA1502029","BUTTONWILLOW REST STOP WATER SYSTEM","Kern","Transient non-community system","CAL TRANS BUTTONWILLOW SFTY RSRA","Transient non-community system","Kern",0.228571428571429
+"360","CA5700828","CONSTELLATION BRANDS - WATER","Yolo","Non-Transient non-community system","PAMUNKEY VINEYARDS","Transient non-community system","Yolo",0.178571428571429
+"361","CA2701951","HELLER ESTATES WS","Monterey","Transient non-community system","MASSA ESTATE VINYEARDS WS (PREV HELLER)","Transient non-community system","Monterey",0.256410256410256
+"362","CA4200572","LAS POSITAS MWC","Santa Barbara","Community water system","LAS POSITAS MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.46875
+"363","CA4200580","SAN MARCOS MWC","Santa Barbara","Community water system","SAN MARCOS MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.451612903225806
+"364","CA1210010","SCOTIA, TOWN OF,  LLC","Humboldt","Community water system","SCOTIA CSD","Community water system","Humboldt",0.333333333333333
+"365","CA2400226","HW NEWPORT (FKA GOLD HILLS NUT)","Merced","Non-Transient non-community system","HARRIS WOOLF ALMONDS-BALLICO","Non-Transient non-community system","Merced",0.193548387096774
+"366","CA2702495","CHATEAU JULIEN WS","Monterey","Transient non-community system","FOLKTALE WINERY WS","Transient non-community system","Monterey",0.277777777777778
+"367","CA4200666","KINECTA FEDERAL CREDIT UNION","Santa Barbara","Transient non-community system","KINECTA FCU","Non-Transient non-community system","Santa Barbara",0.392857142857143
+"368","CA5402056","PEOPLES GROCERY","Tulare","Transient non-community system","PEOPLE'S FOOD AND DELI INC.","Transient non-community system","Tulare",0.37037037037037
+"369","CA3301568","MAYFLOWER - RIV. COUNTY PARKS","Riverside","Transient non-community system","MAYFLOWER PARK","Transient non-community system","Riverside",0.482758620689655
+"370","CA2000564","CALIFORNIA LIONS CAMP PACIFICA","Madera","Transient non-community system","CAMP PACIFICA","Transient non-community system","Madera",0.433333333333333
+"371","CA2000594","THE OLD NUGGET","Madera","Transient non-community system","CANTINA WATER SYSTEM","Transient non-community system","Madera",0.2
+"372","CA4200807","WOODSTOCK PROPERTY OWNERS ASSN","Santa Barbara","Community water system","WOODSTOCK RANCH","Community water system","Santa Barbara",0.4
+"373","CA4200848","VISTA HILLS MWC","Santa Barbara","Community water system","VISTA HILLS MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.46875
+"374","CA4200862","MESA HILLS MWC","Santa Barbara","Community water system","MESA HILLS MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.451612903225806
+"375","CA4200872","VENTUCOPA WATER SUPPLY","Santa Barbara","Transient non-community system","VENTUCOPA","Transient non-community system","Santa Barbara",0.409090909090909
+"376","CA4000202","EDNA RANCH MUTUAL WATER CO-EAST","San Luis Obispo","Community water system","EDNA VALLEY RANCH EAST","Community water system","San Luis Obispo",0.419354838709677
+"377","CA1502826","B&J LAND COMPANY","Kern","Transient non-community system","FAMOSO FUEL STOP","Transient non-community system","Kern",0
+"378","CA4200579","ROSARIO PARK WATER SYSTEM","Santa Barbara","Community water system","ROSARIO PARK","Community water system","Santa Barbara",0.48
+"379","CA3301171","COWBOY COUNTRY CAMPGROUND","Riverside","Transient non-community system","BRADFORD RUN RV","Community water system","Riverside",0.2
+"380","CA4200556","FOSTER ROAD MWC","Santa Barbara","Community water system","FOSTER ROAD MUTUAL WATER COMPANY","Community water system","Santa Barbara",0.46875
+"381","CA4200718","CHANNEL TECHNOLOGIES GROUP LLC","Santa Barbara","Non-Transient non-community system","MAJESTIC TOWNSGATE WATER SYSTEM","Non-Transient non-community system","Santa Barbara",0.161290322580645
+"382","CA3200058","Cromberg Spring Water Association","","Transient non-community system","CROMBERG SPRING WATER ASSN","Transient non-community system","Plumas",0.212121212121212
+"383","CA2000595","COUNTRY LIVING MHP","Madera","Community water system","MADERA MH & RV PARK","Community water system","Madera",0.105263157894737
+"384","CA4901213","LYTTON ADULT REHABILITATION CENTER","Sonoma","Non-Transient non-community system","LYTTON SPRINGS WATER SYSTEM","Non-Transient non-community system","Sonoma",0.382352941176471
+"385","CA2010014","HILLVIEW WATER CO-GOLDSIDE-HIL","Madera","Community water system","CAL AM - GOLDSIDE","Community water system","Madera",0.4
+"386","CA2010012","HILLVIEW WATER CO-RAYMOND","Madera","Community water system","CAL AM - RAYMOND","Community water system","Madera",0.44
+"387","CA2010007","HILLVIEW WC-OAKHURST/SIERRA LAKES","Madera","Community water system","CAL AM - OAKHURST","Community water system","Madera",0.303030303030303
+"388","CA2800103","SILENUS","Napa","Transient non-community system","SILENUS VINTNERS","Transient non-community system","Napa",0.4375
+"389","CA2800014","BARREL STOP WINERY","Napa","Transient non-community system","11:11 WINERY","Transient non-community system","Napa",0.388888888888889
+"390","CA2800032","TERRA VALENTINE","Napa","Transient non-community system","LOKOYA WINERY","Transient non-community system","Napa",0.133333333333333
+"391","CA5000516","LIVING FAITH COMMUNITY CHURCH","Stanislaus","Transient non-community system","COVENANT GROVE CHURCH","Transient non-community system","Stanislaus",0.413793103448276
+"392","CA1600293","CHARDELLS","Kings","Community water system","CHAMPIONS- SAMUEL'S HOUSE","Community water system","Kings",0.24
+"393","CA0707509","JOES ISLAND RESTAURANT","Contra Costa","Transient non-community system","DELTA BAR AND GRILL","Transient non-community system","Contra Costa",0.181818181818182
+"394","CA3901343","VALLEY CREST TREE COMPANY","San Joaquin","Non-Transient non-community system","DEVIL MOUNTAIN WHOLESALE NURSERY","Non-Transient non-community system","San Joaquin",0.21875
+"395","CA3901328","CARBONA FOOD & LIQUOR WATER SYSTEM","San Joaquin","Transient non-community system","FAMILY MARKET WATER SYSTEM","Transient non-community system","San Joaquin",0.441176470588235
+"396","CA3302062","DINER 371","Riverside","Transient non-community system","SPARTAN VETERINARY SERVICES","Transient non-community system","Riverside",0.148148148148148
+"397","CA2800033","GAMBLE WINERY","Napa","Non-Transient non-community system","GAMBLE FAMILY VINEYARDS WINERY","Transient non-community system","Napa",0.433333333333333
+"398","CA2800112","PROFESSIONAL CENTER OF ST HELENA","Napa","Non-Transient non-community system","PCSH, LLC","Non-Transient non-community system","Napa",0.125
+"399","CA4200952","FOXEN CANYON WINERY","Santa Barbara","Transient non-community system","FOXEN VINEYARD INC.","Transient non-community system","Santa Barbara",0.473684210526316
+"400","CA2800302","HARTWELL WINERY","Napa","Transient non-community system","REALM ESTATE","Transient non-community system","Napa",0.2
+"401","CA3303084","VAIL LAKE VILLAGE RESORT","Riverside","Transient non-community system","TEMECULA/VAIL LAKE KOA","Transient non-community system","Riverside",0.291666666666667
+"402","CA0900411","CAFE MAHJAIC / LOTUS INN","El Dorado","Transient non-community system","LOTUS PUB","Transient non-community system","El Dorado",0.25
