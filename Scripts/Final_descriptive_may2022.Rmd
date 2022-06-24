@@ -1,16 +1,13 @@
 ---
-title: "Descriptive summary"
+title: "Descriptiveanalysis_final_May2022"
 author: "Kristin Dobbin"
-date: "2/28/2022"
-output:
-  pdf_document: default
-  html_document: default
+date: "5/9/2022"
+output: html_document
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
 #markdown settings
 knitr::opts_knit$set(root.dir = "/Users/KristinDobbin/Dropbox/UCLA/R_Projects_UCLA/Consolidations", warning=FALSE, message=FALSE, include=FALSE)
-
 ```
 
 ```{r load, include=FALSE, echo= FALSE}
@@ -18,7 +15,7 @@ knitr::opts_knit$set(root.dir = "/Users/KristinDobbin/Dropbox/UCLA/R_Projects_UC
 library(tidyverse)
 
 #load data
-Data <- read.csv("Outputs/CompiledFeb28.csv")
+Data <- read.csv("Outputs/FulldataApril20_smallclean.csv")
 
 #Correct data types
 Data$County <- as.factor(Data$County)
@@ -49,11 +46,11 @@ Mandatory <- Data %>% filter(Mandatory_or_voluntary == "Mandatory")
 
 ## Overview of consolidations 2015-2021
 
-In 2015 there were 7,642 Public Water Systems (PWSs) in the state, 3,015 of which were Community Water Systems (CWS) (2015 Safe Drinking Water Plan). Today, the state counts 7,351 PWS with 2,870 CWS. Some of this reduction can be attributed to system consolidations. Compiling various state data sources we have identified 229 cases of consolidation including 126 consolidated CWS resulting in the inactivation of approximately 188 systems over the course of the last six years.  
+In 2015 there were 7,642 Public Water Systems (PWSs) in the state, 3,015 of which were Community Water Systems (CWS) (2015 Safe Drinking Water Plan). Today, the state counts 7,351 PWS with 2,870 CWS. Some of this reduction can be attributed to system consolidations. Compiling various state data sources we have identified 228 cases of consolidation including 125 consolidated CWS resulting in the inactivation of approximately 188 systems over the course of the last six years.  
 
 These consolidations have taken place is nearly every county (47 total) and impacted an estimated `r sum(na.omit(Data$Receiving_2021_pop))` Californians served by involved systems, both those that have been consolidated and those that received them. `r sum(na.omit(Data$Population))` Californians have changed water providers as part of a consolidation project, in other words, were served by a *consolidated* system. 
 
-Of the 229 cases we identify, `r Data %>% filter(Physical_or_Mangerial == "Managerial") %>% tally()` were managerial consolidations, the remaining `r Data %>% filter(Physical_or_Mangerial == "Physical") %>% tally()` were physical consolidations. Our data set consists of only `r Data %>% filter(Mandatory_or_voluntary == "Mandatory") %>% tally()` mandatory consolidations (Pratt MWC and Ceres West MHP) with the remainder being voluntary consolidations.  
+Of the 228 cases we identify, `r Data %>% filter(Physical_or_Mangerial == "Managerial") %>% tally()` were managerial consolidations, another `r Data %>% filter(Physical_or_Mangerial == "Physical") %>% tally()` were physical consolidations (we are still missing data for another ~20 cases). Our data set consists of only `r Data %>% filter(Mandatory_or_voluntary == "Mandatory") %>% tally()` mandatory consolidations (Pratt MWC and Ceres West MHP) with the remainder being voluntary consolidations.  
 
 ## Drivers of consolidation
 
