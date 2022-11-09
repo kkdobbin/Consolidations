@@ -64,13 +64,13 @@ str(PWS_boundary)
 #plot(st_geometry(PWS_boundary)) #takes a while but works!
 
 #join consolidation data with boundary data so I only have to work with boundaries I actually need
-Cases <- read_csv("Outputs/CompiledApril20.csv")
+Cases <- read_csv("Outputs/Compiledfinaldata.csv")
 Cases <- left_join(Cases, Joined_consolidatedsystems_blockgroup2020, by = c("SystemID" = "PWSID")) #first add consolidated systems with census data in too
 PWS_boundary$SABL_PWSID <- as.factor(PWS_boundary$SABL_PWSID)
 PWS_boundary$WATER_SYST <- as.factor(PWS_boundary$WATER_SYST)
 PWS_boundary <- PWS_boundary %>% filter(BOUNDARY_T != "Jurisdictional") #remove jurisidictional boundaires to get rid of duplicates
 Cases <- left_join(Cases, PWS_boundary, by = c("Receiving_System_ID" = "SABL_PWSID"))
-Cases <- Cases[,-c(67:97)] #Reduce data frame a bit to be more manageable, don't need most of the boundary variables just added
+Cases <- Cases[,-c(74:104)] #Reduce data frame a bit to be more manageable, don't need most of the boundary variables just added
 #rename variables for clarity on which spatial goes which system system
 Cases <- Cases %>% rename(geometry_receiving = geometry.y, geometry_consolidated = geometry.x, SHAPE_Area_receiving = SHAPE_Area, SHAPE_Leng_receiving = SHAPE_Leng)
 
@@ -97,10 +97,11 @@ Interpolation <- aw_interpolate(Recieving_boundaries, tid = Receiving_System_ID,
 #ar_validate(source = Demographics_blockg, target = Recieving_boundaries, varList = c("Race.estimate.total", "Race.white.alone", "Race.black.alone", "Race.native.alone", "Race.asian.alone", "Race.PI.alone", "Race.hispanicorlatino", "Tenure.estimate.total", "Tenure.owner", "Tenure.renter", "Households.total", "Income.aggregatecount"), verbose = TRUE)
 
 #now add into cases, first remove geometry columns
-Cases <- Cases[,-c(40,69)]
+Cases <- Cases[,-c(47,76)]
 Cases <- left_join(Cases, Interpolation, by = "Receiving_System_ID")
 
-write_csv(Cases, "Outputs/FulldataApril20.csv")
+#Check and rewrite with new name
+write_csv(Cases, "Outputs/Fullfinaldata.csv")
 
 #need to clean up all the demographic variables for receiving system are .y now and consolidated systems are .x also all are aggregate counts so need to make percentages to compare. Lastly reduce to a more manageable data set with only needed data for descriptive analysis
 
@@ -159,9 +160,8 @@ summary(Cases$Percent.hispanicorlatino.receiving)
 Cases$MHI.receiving <- ((Cases$Income.aggregatecount)/(Cases$Households.total.y))
 summary(Cases$MHI.receiving)
 
-
 #Reduce to more manageable set
 Small <- Cases
-Small <- Small[,-c(30:35, 39:79)]
+Small <- Small[,-c(46:86)]
 
-write_csv(Small, "Outputs/FulldataApril20_smallclean.csv")
+write_csv(Small, "Outputs/Fullfinaldata_smallclean.csv")

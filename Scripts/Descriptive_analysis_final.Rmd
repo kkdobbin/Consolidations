@@ -2,12 +2,15 @@
 title: "Final consolidation data set analysis"
 author: "Kristin Dobbin"
 date: "6/23/2022"
-output: html_document
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
 #markdown settings
-knitr::opts_knit$set(root.dir = "/Users/KristinDobbin/Dropbox/UCLA/R_Projects_UCLA/Consolidations", warning=FALSE, message=FALSE, include=FALSE)
+knitr::opts_knit$set(root.dir = "/Users/KristinDobbin/Dropbox/Projects/R_Projects/Consolidations", warning=FALSE, message=FALSE, include=FALSE)
 ```
 
 ```{r load, include=FALSE, echo= FALSE}
@@ -37,9 +40,14 @@ Data$Mandatory_or_voluntary <- as.factor(Data$Mandatory_or_voluntary)
 Data$Consolidatedsystem_primary_source_combinedFINAL <- as.factor(Data$Consolidatedsystem_primary_source_combinedFINAL)
 Data$Receiving_2021_source <- as.factor(Data$Receiving_2021_source)
 Data$Unique_project <- as.factor(Data$Unique_project) 
+Data$Number_systems_involved <- as.factor(Data$Number_systems_involved)
+Data$Receiving_2021_systemtype <- as.factor(Data$Receiving_2021_systemtype)
+Data$govcat_cons <- as.factor(Data$govcat_cons)
+Data$govcat_rec <- as.factor(Data$govcat_rec)
+Data$Data_source <- as.factor(Data$Data_source)
 
 #Make subsets for different groups of interest of consolidated systems/types
-CWS <- Data %>% filter(!System_Type %in% c('NC', 'NP', 'NTNC'))
+CWS <- Data %>% filter(!System_Type %in% c('NC', 'NP', 'NTNC'))#not I'm explicit including domestic wells and states smalls as CWS in this
 
 Uniqueprojectsa <- Data %>% group_by(Unique_project) %>% filter (! duplicated(Unique_project)) 
 Uniqueprojectsa <- Uniqueprojectsa[-1,]
@@ -55,13 +63,24 @@ Receiving_systems <- Data %>% group_by(Receiving_System_ID) %>% filter (! duplic
 
 ## Overview of consolidations 2015-2021
 
-In 2015 there were 7,642 Public Water Systems (PWSs) in the state, 3,015 of which were Community Water Systems (CWS) (2015 Safe Drinking Water Plan). Today, the state counts 7,351 PWS with 2,870 CWS. Some of this reduction can be attributed to system consolidations. Compiling various state data sources we have identified `r nrow(Uniqueprojects)` cases of completed consolidation projects between 2015 and 2016.  
+In 2015 there were 7,642 Public Water Systems (PWSs) in the state, 3,015 of which were Community Water Systems (CWS) (2015 Safe Drinking Water Plan). Today, the state counts 7,351 PWS with 2,870 CWS. Some of this reduction can be attributed to system consolidations. Compiling various state data sources we have identified `r nrow(Uniqueprojects)` consolidation projects between 2015 and 2016.  
 
-These consolidations have taken place in nearly every county (48 total) and involve the water providers of an estimated `r sum(na.omit(Receiving_systems$Receiving_2021_pop))` Californians. Of them, `r sum(na.omit(Data$Population))` have been incorporated as customers into a new water system as part of a consolidation project, in other words, were previously served by a *consolidated* system. 
+These consolidations have taken place in nearly every county (47 total) and involve the water providers of an estimated `r sum(na.omit(Receiving_systems$Receiving_2021_pop))` Californians. Of them, `r sum(na.omit(Data$Population))` have been incorporated as customers into a new water system as part of a consolidation project, in other words, were previously served by a *consolidated* system. 
 
 Of the `r nrow(Uniqueprojects)` cases we identify, `r nrow(Managerial)` were managerial consolidations, another `r nrow(Physical)` were physical consolidations. Our data set consists of only `r nrow(Mandatory)` mandatory consolidations (Pratt MWC and Ceres West MHP) with the remainder being voluntary consolidations.  
 
-Distance....
+```{r distance, include=FALSE, echo= FALSE}
+Physicallyconsolidatedsystems <- Data %>% filter(Physical_or_Mangerial == "Physical") 
+PhysicallyconsolidatedCWS <- Data %>% filter(Physical_or_Mangerial == "Physical") %>% filter(System_Type == "C")
+
+Manageriallyconsolidatedsystems <- Data %>% filter(Physical_or_Mangerial == "Managerial") 
+
+Data$Distance.miles <- round(Data$Distance.m./1609.344,3)
+```
+
+Among the `r nrow(Physicallyconsolidatedsystems)` water systems physical consolidated, the mean distance between these systems and the service boundary of the system to which they were connected was `r round(mean(na.omit(Physicallyconsolidatedsystems$Distance.m.))/1609.344, 3)` miles, the median distance was `r round(median(na.omit(Physicallyconsolidatedsystems$Distance.m.))/1609.344,3)`. The minimum distance was `r round(min(na.omit(Physicallyconsolidatedsystems$Distance.m.))/1609.344,3)` miles (ie already in the service boundaries) and the maximum was `r round(max(na.omit(Physicallyconsolidatedsystems$Distance.m.))/1609.344,3)` miles. 
+
+Only considering the `r nrow(PhysicallyconsolidatedCWS)` physically consolidated CWS the mean distance between these systems and the service boundary of the system to which they were connected was `r round(mean(na.omit(PhysicallyconsolidatedCWS$Distance.m.))/1609.344,3)` miles, the median distance was `r round(median(na.omit(PhysicallyconsolidatedCWS$Distance.m.))/1609.344,3)`
 
 ## Drivers of consolidation
 
@@ -69,28 +88,28 @@ The SWRCB has publicly available information on factors driving or incentivizing
 
 ```{r drivers, include=TRUE, echo=FALSE}
 knitr::kable(summary(na.omit(Data$Issue_summary)), col.names = "#")
+
+knitr::kable(summary(na.omit(Physicallyconsolidatedsystems$Issue_summary)), col.names = "#")
+
+knitr::kable(summary(na.omit(Manageriallyconsolidatedsystems$Issue_summary)), col.names = "#")
 ```
 
 ## Characteristics of all consolidated systems
 
-As preciously mentioned, `r sum(na.omit(Data$Population))` Californians were served by a water system that was consolidated between January 2015 and December 2021. The mean population served by one of these systems is `r round(mean(Data$Population), digits=0)` with a minimum of `r min(Data$Population)` (as listed in SDWIS data) and maximum of `r max(Data$Population)`. The median population served,  however, is `r median(Data$Population)` indicating that the vast majority of consolidated systems are very small. 
+As previously mentioned, `r sum(na.omit(Data$Population))` Californians were served by a water system that was consolidated between January 2015 and December 2021. The mean population served by one of these systems is `r round(mean(Data$Population), digits=0)` with a minimum of `r min(Data$Population)` (as listed in SDWIS data) and maximum of `r max(Data$Population)`. The median population served,  however, is `r median(Data$Population)` indicating that the vast majority of consolidated systems are very small. 
 
-The `r nrow(Uniqueprojects)`consolidation projects studied here resulted in the inactivation of approximately `r (nrow(Data)-3)` Public Water Systems between 2015 and 2016. `r Data %>% filter(System_Type == "C") %>% tally()` of these systems were Community Water Systems (CWS). The remainder are a mix of NC and NTNC systems. Further we identify `r Data %>% filter(System_Type == "SSWS") %>% tally()` consolidation of a state small water systems and `r sum(is.na(Data$System_Type))` instances of consolidating domestic well communities. 
+The `r nrow(Uniqueprojects)` consolidation projects studied here resulted in the inactivation of approximately `r (nrow(Data)-3)` Public Water Systems between 2015 and 2016. `r Data %>% filter(System_Type == "C") %>% tally()` of these systems were Community Water Systems (CWS). The remainder are a mix of NC and NTNC systems. Further we identify `r Data %>% filter(System_Type == "SSWS") %>% tally()` consolidation of a state small water systems and `r sum(is.na(Data$System_Type))` instances of consolidating domestic well communities. 
 
 `r Data %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "GW" | Consolidatedsystem_primary_source_combinedFINAL == "GWP") %>% tally()` of these systems relied on groundwater as their primary source, another `r Data %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "SW" | Consolidatedsystem_primary_source_combinedFINAL == "SWP") %>% tally()` relied on surface water.
 
-These systems, in turn, represent `r sum(table(unique(Data$Institution_type)))` different institutional/governing types (See Dobbin & Fencl 2021). The most common type is Private (other) signifiying non IOU private systems that could not readily be identified as a mutual water company, homeowners association or mobile home park.The second most common types is Mobile Home Parks. 
+These systems, in turn, represent `r sum(table(unique(Data$Institution_type)))` different institutional/governing types (See Dobbin & Fencl 2021). These types can be furthered grouped into `r sum(table(unique(Data$govcat_cons)))` The most common type is Private ancillary systems. The second most common type is public ancillary systems. See table below and see appendix for more detailed institutional type distribution.
 
-```{r gov types, include=TRUE, echo=FALSE}
-ConsolidatedtypeALL <- as.data.frame(table(Data$Institution_type))
-ConsolidatedtypeALL <- rename(ConsolidatedtypeALL, "Institutional_Type" = "Var1")
-ConsolidatedtypeALL <- ConsolidatedtypeALL[order(ConsolidatedtypeALL$Freq, decreasing = TRUE),] 
-ConsolidatedtypeALL$Freq[ConsolidatedtypeALL$Freq==0] <- NA
-ConsolidatedtypeALL<-ConsolidatedtypeALL[complete.cases(ConsolidatedtypeALL),]
-
-knitr::kable(ConsolidatedtypeALL, row.names=FALSE)
+```{r gov cat cons, include=TRUE, echo=FALSE}
+govcat_cons <- as.data.frame(table(Data$govcat_cons))
+govcat_cons <- rename(govcat_cons, "Governance Category" = "Var1")
+govcat_cons <- govcat_cons[order(govcat_cons$Freq, decreasing = TRUE),] 
+knitr::kable(govcat_cons, row.names = FALSE)
 ```
-
 
 ## Characteristics of consolidated Community Water Systems
 
@@ -107,9 +126,9 @@ knitr::kable(summarize(CWS,
 
 `r CWS %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "GW" | Consolidatedsystem_primary_source_combinedFINAL == "GWP") %>% tally()` of the consolidated CWS relied on groundwater as their primary source, another `r CWS %>% filter(Consolidatedsystem_primary_source_combinedFINAL == "SW" | Consolidatedsystem_primary_source_combinedFINAL == "SWP") %>% tally()` relied on surface water.   
 
-These systems, in turn, represent `r sum(table(unique(CWS$Institution_type)))` different institutional/governing types (See Dobbin & Fencl 2021). The most common type is Mobile Home Parks followed by IOUs and "Private (other)" systems, representing non IOU private systems that could not readily be identified as a mutual water company, homeowners association or mobile home park.
+These systems, in turn, represent `r sum(table(unique(CWS$Institution_type)))` different institutional/governing types (See Dobbin & Fencl 2021) also spanning `r sum(table(unique(CWS$govcat_cons)))`. The most common governance type is Private Ancillary systems followed by IOUs and private nonprofit systems.
 
-```{r gov types, include=TRUE, echo=FALSE}
+```{r gov types CWS only, include=TRUE, echo=FALSE}
 ConsolidatedtypeCWS <- as.data.frame(table(CWS$Institution_type))
 ConsolidatedtypeCWS <- rename(ConsolidatedtypeCWS, "Institutional_Type" = "Var1")
 ConsolidatedtypeCWS <- ConsolidatedtypeCWS[order(ConsolidatedtypeCWS$Freq, decreasing = TRUE),] 
@@ -117,16 +136,18 @@ ConsolidatedtypeCWS$Freq[ConsolidatedtypeCWS$Freq==0] <- NA
 ConsolidatedtypeCWS<-ConsolidatedtypeCWS[complete.cases(ConsolidatedtypeCWS),]
 
 knitr::kable(ConsolidatedtypeCWS, row.names=FALSE)
+
+govcat_cons_CWS <- as.data.frame(table(CWS$govcat_cons))
+govcat_cons_CWS <- rename(govcat_cons_CWS, "Governance Category" = "Var1")
+govcat_cons_CWS <- govcat_cons_CWS[order(govcat_cons_CWS$Freq, decreasing = TRUE),] 
+knitr::kable(govcat_cons_CWS, row.names = FALSE)
+
 ```
 
-Demographics.....
-
 ## Characteristics of receiving water systems
-Among the `r nrow(Receiving_systems)` unique receiving water systems, 87 rely on groundwater as their primary source, another 55 rely on surface water. 
+Among the `r nrow(Receiving_systems)` unique receiving water systems, 87 rely on groundwater as their primary source, another 55 rely on surface water. 133 of these systems are community water systems. 
 
-Type...
-
-```{r, receiving system characteristics, include=TRUE, echo=FALSE}
+```{r receiving system characteristics, include=TRUE, echo=FALSE}
 Projectbyreceiving <- as.data.frame(table(Uniqueprojects$Receiving_System_ID))
 ```
 
@@ -134,42 +155,168 @@ Projectbyreceiving <- as.data.frame(table(Uniqueprojects$Receiving_System_ID))
 
 ## Characteristics of only systems "receiving" CWSs in consolidations
 
-Among the systems that were receiving systems in the above cases of CWS consolidation, we find similar diversity in institutional types, IOUs are the most common receiving system type and City's the second most common. Overall, `r sum(table(unique(CWS$Receiving_System_Institution_Type)))` different institutional types acted as receiving systems over the studied period. 
+Among the systems that were receiving systems in the above cases of CWS consolidation, we find similar diversity in institutional types, IOUs are the most common receiving system type and City's the second most common. Overall, `r sum(table(unique(CWS$Receiving_System_Institution_Type)))` different institutional types acted as receiving systems over the studied period spanning `r sum(table(unique(CWS$govcat_rec)))`. See appendix for the break down of institutional types and governance categories for all receiving systems not just those receiving CWS. 
 
-```{r recieving systems, include=TRUE, echo=FALSE}
-Receivingtype <- as.data.frame(table(CWS$Receiving_System_Institution_Type))
-Receivingtype <- rename(Receivingtype, "Institutional_Type" = "Var1")
-Receivingtype <- Receivingtype[order(Receivingtype$Freq, decreasing = TRUE),] 
-Receivingtype$Freq[Receivingtype$Freq==0] <- NA
-Receivingtype<-Receivingtype[complete.cases(Receivingtype),]
+```{r recieving systems gov, include=TRUE, echo=FALSE}
+Receiving_systems_CWS <- CWS %>% distinct(Receiving_System_ID)
+governancecategory_rec <- read_csv("Data/govcategory_receiving.csv")
+Receiving_systems_CWS <- left_join(Receiving_systems_CWS, governancecategory_rec)
+Receiving_systems_CWS$Category <- as.factor(Receiving_systems_CWS$Category)
 
-knitr::kable(Receivingtype, row.names=FALSE)
+govcat_rec <- as.data.frame(table(Receiving_systems_CWS$Category))
+govcat_rec <- rename(govcat_rec, "Governance Category" = "Var1")
+govcat_rec <- govcat_rec[order(govcat_rec$Freq, decreasing = TRUE),] 
+knitr::kable(govcat_rec, row.names = FALSE)
+
+Receiving_inst_types <- Receiving_systems %>% select(Receiving_System_ID, Receiving_System_Institution_Type)
+Receiving_systems_CWS <- left_join(Receiving_systems_CWS, Receiving_inst_types)
+
+intype_rec <- as.data.frame(table(Receiving_systems_CWS$Receiving_System_Institution_Type))
+intype_rec <- rename(intype_rec, "Institutional Type" = "Var1")
+intype_rec <-intype_rec[-c(5,8,11,12,14,18),]
+intype_rec <- intype_rec[order(intype_rec$Freq, decreasing = TRUE),]
+knitr::kable(intype_rec, row.names = FALSE)
 ```
 
 ## Governance change as a result of CWS consolidations
 
 ```{r gov combos, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
-Pathways <- CWS
-Pathways$Pathway <- paste(Pathways$Institution_type, ", ", Pathways$Receiving_System_Institution_Type)
-Pathways$Pathway <- as.factor(Pathways$Pathway)
-Pathwaystable <- as.data.frame(table(Pathways$Pathway))
-Pathwaystable <- Pathwaystable[order(Pathwaystable$Freq, decreasing = TRUE),]
+cat_Pathways <- CWS
+cat_Pathways$Pathway <- paste(cat_Pathways$govcat_cons, ", ", cat_Pathways$govcat_rec)
+cat_Pathways$Pathway <- as.factor(cat_Pathways$Pathway)
+cat_Pathwaystable <- as.data.frame(table(cat_Pathways$Pathway))
+cat_Pathwaystable <- cat_Pathwaystable[order(cat_Pathwaystable$Freq, decreasing = TRUE),]
 ```
 
-Using this information about consolidated and receiving system types, then, we are able to identify how CWS governance is changing in the state as a result of consolidations. In total, CWS consolidations represent `r sum(table(unique(Pathwaystable$Var1)))` distinct governance changes, the five most common of which are displayed in the table below. 
+Using this information about consolidated and receiving system types, then, we are able to identify how CWS governance is changing in the state as a result of consolidations. In total, CWS consolidations represent `r sum(table(unique(cat_Pathwaystable$Var1)))` distinct governance changes, the five most common of which are displayed in the table below. 
 
-```{r, most common combos, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
-Pathwaystable_head <- top_n(Pathwaystable, 5)
-knitr::kable(Pathwaystable_head, row.names=FALSE, col.names = c("Change from, to", "#"))
+```{r most common combos, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+cat_Pathwaystable_head <- top_n(cat_Pathwaystable, 5)
+knitr::kable(cat_Pathwaystable_head, row.names=FALSE, col.names = c("Change from, to", "#"))
 ```
 
 ## Demographic comparison between consolidated CWS and receiving systems
 
-demographics.....
+```{r demographics set up, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+Dem <- read_csv("Outputs/Fullfinaldata_smallclean.csv")
+Dem <- Dem[-c(207:208),]
+Dem <-  Dem %>% filter(!System_Type %in% c('NC', 'NP', 'NTNC')) #Filter to only CWS and domestic well/state small residential systems
+
+
+#make summary table consolidated systems dem
+Dem.cons <- Dem %>% select(Percent.hispanicorlatino.consolidated, Percent.white.consolidated, Percent.asian.consolidated, Percent.black.consolidated, Percent.PI.consolidated, Percent.native.consolidated, Percent.renter.consolidated, MHI.consolidated) %>%
+ summarise_all(funs(min = min, 
+                      mean = mean, 
+                      median = median,
+                      max = max,
+                      sd = sd), na.rm = TRUE)
+Dem.cons <- Dem.cons %>% gather(stat, val) %>%
+  separate(stat, into = c("var", "stat"), sep = "_") %>%
+  spread(stat, val) %>%
+  select(var, min, mean, median, max, sd) 
+Dem.cons <- Dem.cons %>% mutate(across(is.numeric, round, digits=2))
+
+#make summary table receiving systems dem
+Dem.rec <- Dem %>% distinct(Receiving_System_ID, .keep_all = TRUE) %>% select(Percent.hispanicorlatino.receiving, Percent.white.receiving, Percent.asian.receiving, Percent.black.receiving, Percent.PI.receiving, Percent.native.receiving, Percent.renter.receiving, MHI.receiving) %>%
+ summarise_all(funs(min = min, 
+                      mean = mean, 
+                      median = median,
+                      max = max,
+                      sd = sd), na.rm = TRUE)
+Dem.rec <- Dem.rec %>% gather(stat, val) %>%
+  separate(stat, into = c("var", "stat"), sep = "_") %>%
+  spread(stat, val) %>%
+  select(var, min, mean, median, max, sd) 
+Dem.rec <- Dem.rec %>% mutate(across(is.numeric, round, digits=2))
+
+Dem.uniquerec <- Dem %>% distinct(Receiving_System_ID, .keep_all = TRUE)
+
+#difference of means with wilcoxon test (NOT PAIRED)
+wilcox.test(Dem$Percent.white.receiving, Dem$Percent.white.consolidated, paired = FALSE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.hispanicorlatino.receiving, Dem$Percent.hispanicorlatino.consolidated, paired = FALSE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.asian.receiving, Dem$Percent.asian.consolidated, paired = FALSE, alternative = "two.sided")
+
+wilcox.test( Dem$Percent.black.consolidated, Dem$Percent.black.receiving, paired = FALSE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.PI.receiving, Dem$Percent.PI.consolidated, paired = FALSE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.native.receiving, Dem$Percent.native.consolidated, paired = FALSE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.renter.receiving, Dem$Percent.renter.consolidated, paired = FALSE, alternative = "two.sided")
+
+wilcox.test(Dem$MHI.receiving, Dem$MHI.consolidated, paired = FALSE, alternative = "two.sided")
+
+#Paired differences
+Dem$dif.white <- ((Dem$Percent.white.receiving) - (Dem$Percent.white.consolidated))
+Dem$dif.his <- ((Dem$Percent.hispanicorlatino.receiving) - (Dem$Percent.hispanicorlatino.consolidated))
+Dem$dif.asian <- ((Dem$Percent.asian.receiving) - (Dem$Percent.asian.consolidated))
+Dem$dif.black <- ((Dem$Percent.black.receiving) - Dem$Percent.black.consolidated)
+Dem$dif.PI <- ((Dem$Percent.PI.receiving) - (Dem$Percent.PI.consolidated))
+Dem$dif.native <- ((Dem$Percent.native.receiving) - (Dem$Percent.native.consolidated))
+Dem$dif.renter <- ((Dem$Percent.renter.receiving) - (Dem$Percent.renter.consolidated))
+Dem$dif.MHI <- ((Dem$MHI.receiving) - (Dem$MHI.consolidated))
+Dem$dif.MHIpercent <- ((abs(Dem$dif.MHI))/((Dem$MHI.consolidated + Dem$MHI.receiving)/2))*100
+
+Dem.dif <- Dem %>% select(dif.his ,dif.white, dif.asian, dif.black, dif.PI, dif.native, dif.renter, dif.MHI) %>%
+ summarise_all(funs(min = min, 
+                      mean = mean, 
+                      median = median,
+                      max = max,
+                      sd = sd), na.rm = TRUE)
+Dem.dif <- Dem.dif %>% gather(stat, val) %>%
+  separate(stat, into = c("var", "stat"), sep = "_") %>%
+  spread(stat, val) %>%
+  select(var, min, mean, median, max, sd) 
+Dem.dif <- Dem.dif %>% mutate(across(is.numeric, round, digits=2))
+
+#large differences
+dif.white <- Dem %>% filter(abs(Dem$dif.white) >= 20)
+dif.rent <- Dem %>% filter(abs(Dem$dif.renter) >= 20)
+dif.MHI <- Dem %>% filter(Dem$dif.MHIpercent >= 20)
+dif.large <- Dem %>% filter(abs(Dem$dif.white) >= 20 | abs(Dem$dif.renter) >= 20 | Dem$dif.MHIpercent >= 20)
+
+#wilcoxon signed rank test to confirm lack of meaningful differences
+wilcox.test(Dem$Percent.white.receiving, Dem$Percent.white.consolidated, paired = TRUE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.hispanicorlatino.receiving, Dem$Percent.hispanicorlatino.consolidated, paired = TRUE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.asian.receiving, Dem$Percent.asian.consolidated, paired = TRUE, alternative = "two.sided")
+
+wilcox.test( Dem$Percent.black.consolidated, Dem$Percent.black.receiving, paired = TRUE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.PI.receiving, Dem$Percent.PI.consolidated, paired = TRUE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.native.receiving, Dem$Percent.native.consolidated, paired = TRUE, alternative = "two.sided")
+
+wilcox.test(Dem$Percent.renter.receiving, Dem$Percent.renter.consolidated, paired = TRUE, alternative = "two.sided")
+
+wilcox.test(Dem$MHI.receiving, Dem$MHI.consolidated, paired = TRUE, alternative = "two.sided")
+```
+
+The demographic make up of community water systems (inclusive of private well and SSWS) consolidated during the study period are described below based on the census block group of the system area
+
+```{r demographics consolidated comparison, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::kable(Dem.cons)
+```
+
+The demographic make up water system that "received" consolidated community water systems (inclusive of private well and SSWS) consolidated during the study period are described below based on an areal interpolation of the demographics of the system boundaries based on census block groups
+
+```{r demographics receiving comparison, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::kable(Dem.rec)
+```
+
+Looking at these consolidations individually, there is little to no clear trends
+
+```{r demographics change, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::kable(Dem.dif)
+```
+
 
 ## Appendix
 
-### Institutional types for all consolidated water systems (not just CWS):
+### Institutional types and governance category for all consolidated water systems (not just CWS):
 
 ```{r appendix1, include=TRUE, echo=FALSE}
 Consolidatedtype <- as.data.frame(table(Data$Institution_type))
@@ -177,16 +324,29 @@ Consolidatedtype <- rename(Consolidatedtype, "Consolidated_Inst_Type" = "Var1")
 Consolidatedtype <- Consolidatedtype[order(Consolidatedtype$Freq, decreasing = TRUE),] 
 
 knitr::kable(Consolidatedtype, row.names=FALSE)
+
+Consolidated_gov_all <- as.data.frame(table(Data$govcat_con))
+Consolidated_gov_all <- rename(Consolidated_gov_all , "Governance Category" = "Var1")
+Consolidated_gov_all <- Consolidated_gov_all[order(Consolidated_gov_all$Freq, decreasing = TRUE),] 
+
+knitr::kable(Consolidated_gov_all, row.names=FALSE)
+
 ```
 
-### Institutional types for all receiving water systems (not just those receiving CWS systems):
+### Institutional types and governance types for all receiving water systems (not just those receiving CWS systems):
 
 ```{r appendix2, include=TRUE, echo=FALSE}
-Receivingtype_all <- as.data.frame(table(Data$Receiving_System_Institution_Type))
+Receivingtype_all <- as.data.frame(table(Receiving_systems$Receiving_System_Institution_Type))
 Receivingtype_all <- rename(Receivingtype_all, "Institutional_Type" = "Var1")
 Receivingtype_all <- Receivingtype_all[order(Receivingtype_all$Freq, decreasing = TRUE),] 
 
 knitr::kable(Receivingtype_all, row.names=FALSE)
+
+Govtype_all <- as.data.frame(table(Receiving_systems$govcat_rec))
+Govtype_all<- rename(Govtype_all, "Governance Category" = "Var1")
+Govtype_all <- Govtype_all[order(Govtype_all$Freq, decreasing = TRUE),] 
+
+knitr::kable(Govtype_all, row.names=FALSE)
 ```
 
 ### Top ten governance change pathways for all consolidations cases (not just CWS)
@@ -201,3 +361,19 @@ Pathwaystable_all_head <- top_n(Pathwaystable_all, 10)
 knitr::kable(Pathwaystable_all_head, row.names=FALSE, col.names = c("Change from, to", "#"))
 ```
 
+## gov change institutional types for all consolidations
+
+
+```{r appendix 4 1, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+Pathways <- Data
+Pathways$Pathway <- paste(Pathways$govcat_cons, ", ", Pathways$govcat_rec)
+Pathways$Pathway <- as.factor(Pathways$Pathway)
+Pathwaystable <- as.data.frame(table(Pathways$Pathway))
+Pathwaystable <- Pathwaystable[order(Pathwaystable$Freq, decreasing = TRUE),]
+```
+
+
+```{r appendix 4 2, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+Pathwaystable_head <- top_n(Pathwaystable, 5)
+knitr::kable(Pathwaystable_head, row.names=FALSE, col.names = c("Change from, to", "#"))
+```
